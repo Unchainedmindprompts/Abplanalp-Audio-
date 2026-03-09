@@ -4,13 +4,276 @@ import PageHero from "@/components/craig/PageHero";
 import AnimateIn from "@/components/craig/AnimateIn";
 
 export const metadata: Metadata = {
-  title: "The Expertise",
+  title: "Expertise | Craig Abplanalp — Four Decades at the Frontier",
   description:
-    "Forty years. One standard. THX certified. Trinnov trained. CEDIA board member. The credentials, relationships, and career of Craig Abplanalp.",
-  openGraph: {
-    title: "The Expertise | Craig Abplanalp",
-    description: "Forty years. One standard. THX certified. Trinnov trained. CEDIA board member.",
+    "From Audio Associates and Sound Components to building and leading Definitive Audio — Craig Abplanalp's four-decade career has been defined by one unbroken standard: reference-level performance.",
+  alternates: {
+    canonical: "https://www.craigabplanalp.com/expertise",
   },
+  openGraph: {
+    title: "Expertise | Craig Abplanalp",
+    description:
+      "Four decades at the absolute frontier of reference-level home theater and immersive audio.",
+    url: "https://www.craigabplanalp.com/expertise",
+    type: "website",
+  },
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Craig Abplanalp",
+  jobTitle: "Custom Sales Manager",
+  description:
+    "Reference-level home theater and immersive audio specialist with over four decades of experience. Former President of Definitive Audio. THX, Trinnov, and CEDIA certified. Specializes in designing, installing, and calibrating reference-level music and movie systems for residential clients across the Pacific Northwest.",
+  url: "https://www.craigabplanalp.com",
+  telephone: "206.650.9017",
+  email: "craig@craigabplanalp.com",
+  image: "https://www.craigabplanalp.com/images/craig-hero.png",
+  worksFor: {
+    "@type": "Organization",
+    name: "Definitive Audio",
+    url: "https://definitive.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Bellevue",
+      addressRegion: "WA",
+      addressCountry: "US",
+    },
+  },
+  hasCredential: [
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "certification",
+      name: "THX Level 1 Certified",
+      recognizedBy: { "@type": "Organization", name: "THX" },
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "certification",
+      name: "THX Level 2 Certified",
+      recognizedBy: { "@type": "Organization", name: "THX" },
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "certification",
+      name: "Trinnov Optimizer Certified",
+      recognizedBy: { "@type": "Organization", name: "Trinnov" },
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      credentialCategory: "certification",
+      name: "CEDIA RP22 Certified",
+      recognizedBy: { "@type": "Organization", name: "CEDIA" },
+    },
+  ],
+  memberOf: {
+    "@type": "Organization",
+    name: "CEDIA",
+    description: "Custom Electronics Design & Installation Association",
+  },
+  knowsAbout: [
+    "Reference-level home theater design",
+    "Immersive audio systems",
+    "Dolby Atmos",
+    "Auro-3D",
+    "DTS:X",
+    "Room acoustics and calibration",
+    "Trinnov room correction",
+    "THX certified system design",
+    "Wilson Audio loudspeakers",
+    "Mark Levinson amplification",
+    "Ascendo Immersive Audio",
+    "Kaleidescape media systems",
+    "Wisdom Audio",
+    "Revel loudspeakers",
+    "Residential lighting design",
+    "LED lighting control",
+    "Lutron lighting systems",
+    "Custom AV integration",
+    "High-performance two-channel audio",
+    "Private cinema design",
+    "Reference music room design",
+  ],
+  alumniOf: [
+    {
+      "@type": "Organization",
+      name: "Audio Associates",
+      description: "High-end audio retailer, Laurel, Maryland",
+    },
+    {
+      "@type": "Organization",
+      name: "Sound Advice",
+    },
+    {
+      "@type": "Organization",
+      name: "Sound Components",
+      description: "High-end audio retailer, Coral Gables, Florida",
+    },
+  ],
+  areaServed: [
+    { "@type": "City", name: "Seattle", containedInPlace: { "@type": "State", name: "Washington" } },
+    { "@type": "City", name: "Bellevue", containedInPlace: { "@type": "State", name: "Washington" } },
+    { "@type": "AdministrativeArea", name: "Pacific Northwest" },
+    { "@type": "AdministrativeArea", name: "Western Washington" },
+  ],
+  knowsPerson: [
+    {
+      "@type": "Person",
+      name: "Peter McGrath",
+      jobTitle: "Recording Engineer",
+      description: "Highly respected recording engineer and founder of Sound Components",
+    },
+    {
+      "@type": "Person",
+      name: "David Wilson",
+      jobTitle: "Founder",
+      worksFor: { "@type": "Organization", name: "Wilson Audio" },
+    },
+  ],
+};
+
+const professionalServiceSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: "Craig Abplanalp — Reference Audio",
+  description:
+    "Reference-level home theater design, immersive audio installation, and system calibration for residential clients in the Pacific Northwest. Specializing in Ascendo Immersive Audio, THX-certified designs, and Trinnov-optimized room correction.",
+  url: "https://www.craigabplanalp.com",
+  telephone: "206.650.9017",
+  email: "craig@craigabplanalp.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Bellevue",
+    addressRegion: "WA",
+    addressCountry: "US",
+  },
+  areaServed: [
+    { "@type": "City", name: "Seattle" },
+    { "@type": "City", name: "Bellevue" },
+    { "@type": "City", name: "Kirkland" },
+    { "@type": "City", name: "Redmond" },
+    { "@type": "City", name: "Mercer Island" },
+    { "@type": "AdministrativeArea", name: "Pacific Northwest" },
+  ],
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Reference Audio Services",
+    itemListElement: [
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Reference Home Theater Design",
+          description:
+            "Complete design and installation of THX-certified, reference-level private cinema systems",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Immersive Audio System Installation",
+          description:
+            "Ascendo Immersive Audio, Dolby Atmos, Auro-3D, and DTS:X system design and calibration",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Trinnov Room Correction and Calibration",
+          description:
+            "Professional room measurement, correction, and Trinnov Optimizer calibration",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Reference Music Room Design",
+          description:
+            "Two-channel and multi-channel high-performance music listening room design",
+        },
+      },
+      {
+        "@type": "Offer",
+        itemOffered: {
+          "@type": "Service",
+          name: "Residential Lighting Design and Control",
+          description:
+            "Integrated lighting and lighting control design for residential AV environments",
+        },
+      },
+    ],
+  },
+  knowsAbout: [
+    "Ascendo Immersive Audio",
+    "THX certified home theater",
+    "Trinnov room correction",
+    "Wilson Audio",
+    "Mark Levinson",
+    "Kaleidescape",
+    "Dolby Atmos",
+    "Reference audio systems",
+    "Private cinema design",
+    "Residential lighting control",
+  ],
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What certifications does Craig Abplanalp hold?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Craig Abplanalp holds THX Level 1 and Level 2 certifications, Trinnov Optimizer certification, and CEDIA RP22 certification. He has also served as a board member of CEDIA, the Custom Electronics Design & Installation Association, where he contributed to industry training initiatives.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "How long has Craig Abplanalp been in the audio industry?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Craig Abplanalp has over 40 years of experience in the high-performance audio industry, beginning his career at Audio Associates in Laurel, Maryland in 1978. He went on to work at Sound Advice and Sound Components in Coral Gables, Florida before joining Definitive Audio in Seattle in 1993, where he eventually became President before the company's sale in 2018.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What audio brands does Craig Abplanalp specialize in?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Craig Abplanalp has deep expertise with Wilson Audio, Mark Levinson, Revel, Wisdom Audio, Kaleidescape, and is currently an authorized specialist for Ascendo Immersive Audio — a brand he considers the most complete expression of reference-level immersive audio available today.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where does Craig Abplanalp work and what area does he serve?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Craig Abplanalp is based in Bellevue, Washington and serves clients throughout the Pacific Northwest, including Seattle, Bellevue, Kirkland, Redmond, and Mercer Island. He currently works as Custom Sales Manager at Definitive Audio in Bellevue, WA.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does Craig Abplanalp offer lighting design in addition to audio?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Craig Abplanalp's expertise extends beyond audio and video to include residential lighting design and lighting control. He integrates lighting as part of a complete system performance approach, creating spaces that are visually comfortable, acoustically optimized, and intuitive for clients to manage.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Who influenced Craig Abplanalp's approach to audio?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Craig Abplanalp's philosophy was significantly shaped by Peter McGrath, the respected recording engineer and founder of Sound Components, and by David Wilson, founder of Wilson Audio. Working with both gave Craig a direct understanding of the recording process and what it takes to accurately recreate live music in a residential environment.",
+      },
+    },
+  ],
 };
 
 function ArrowRight() {
@@ -32,52 +295,73 @@ function CheckIcon() {
 
 const timeline = [
   {
-    era: "1979–1993",
+    era: "1978–1993",
     title: "The Foundation",
-    body: "Craig's journey began at Audio Associates in Laurel, Maryland — one of the finest high-end audio retailers of the era. It was here that the foundational belief took hold: that truly great sound wasn't a luxury, it was a pursuit. From there to Sound Advice and Sound Components in Coral Gables, Florida, each chapter deepened both the expertise and the conviction. These were the years when Craig learned not just what the best equipment could do, but what it demanded — the rooms, the calibration, the uncompromising attention that separates a system from an experience.",
+    body: [
+      "Craig's journey began at Audio Associates in Laurel, Maryland — one of the finest high-end audio retailers of its era. From there he continued his development at Sound Advice and later Sound Components in Coral Gables, Florida, gaining hands-on experience with many of the world's finest audio systems.",
+      "During his time at Sound Components, Craig had the privilege of working with Peter McGrath, a highly respected recording engineer and founder. Through Peter's deep passion for loudspeakers capable of reproducing the sound of live music, Craig was introduced to David Wilson, founder of Wilson Audio.",
+      "This experience opened the door to a deeper understanding of the recording process and what it truly takes to recreate the sound and emotional impact of a live musical performance in the home. Learning directly from those involved in both recording and loudspeaker design proved invaluable.",
+      "For Craig, these years represented the most formative learning period of his career — shaping the philosophy that would guide every system he would design in the decades to follow.",
+    ],
   },
   {
     era: "1993–2018",
     title: "Building Something Extraordinary",
-    body: "In 1993, Craig became Owner and President of Definitive Audio in Seattle — what would become one of the most respected high-end audio and custom installation companies in the Pacific Northwest. For 25 years as owner and president, he built not just a business but a reputation: for uncompromising performance, for solutions that worked, for clients who trusted him with their most ambitious projects. This is the era that produced the seven-figure residential theaters, the CEDIA recognition, and the deep industry relationships that would shape everything that followed.",
+    body: [
+      "Craig joined Definitive Audio in 1993 as a salesperson in the Seattle showroom. Later that same year, he was asked to take on the responsibility of managing the company's new Bellevue showroom — an opportunity that quickly demonstrated both his leadership and his ability to build lasting client relationships.",
+      "Through years of hard work, successful projects, and an unwavering commitment to performance system design, Craig rose through the organization to become a partner and ultimately President of the company.",
+      "During the next 25 years, Craig helped transform Definitive Audio into one of the Pacific Northwest's most respected high-performance audio and custom installation firms. Under his leadership, the company delivered some of the region's most ambitious residential entertainment systems — including reference-level music rooms and private cinemas designed to rival the experience of the world's finest commercial theaters.",
+      "In 2018, after a quarter century of growth, leadership, and industry influence, the company was successfully sold — marking the close of a defining chapter in Craig's career and the beginning of a new phase focused once again on the craft he loves most.",
+    ],
   },
   {
     era: "2018–Present",
     title: "The Next Frontier",
-    body: "As Custom Sales Manager at Definitive Audio, Craig now focuses exclusively on what has always been his true passion — designing and delivering reference-level immersive audio experiences for clients who demand the absolute best. It is in this role that his partnership with Ascendo Immersive Audio has found its fullest expression, and where four decades of accumulated knowledge translate directly into results that simply cannot be replicated by less experienced hands.",
+    body: [
+      "Following the sale of the company in 2018, Craig continued with Definitive Audio as Custom Sales Manager, returning to his primary passion — designing, installing, and calibrating reference-level music and movie systems.",
+      "In recent years, lighting has also become an increasingly important part of the design process. The industry-wide transition from incandescent lighting to LED technology — driven largely by energy efficiency — has created both new opportunities and new challenges in residential environments.",
+      "Craig's commitment to performance extends beyond audio and video to include lighting and lighting control. By carefully integrating these elements, he helps create spaces that feel natural, visually comfortable, and effortless for clients to manage.",
+      "Today, Craig's role is best described as that of a system performance specialist — bringing together audio, video, lighting, and control to ensure every element works in harmony to create environments that are immersive, intuitive, and truly exceptional.",
+    ],
   },
 ];
 
 const certifications = [
   {
-    title: "THX Level 1 & 2 Certification",
-    trainer: "Tomlinson Holman & Anthony Grimani",
-    description: "Trained by the people who literally invented cinema sound standards. THX certification is the industry's gold standard for acoustic performance — and Craig holds both levels.",
+    title: "THX Level 1 & 2 Certified",
+    trainer: "THX",
+    description:
+      "Trained by the people who literally invented cinema sound standards. THX certification is the industry's gold standard for acoustic performance — and Craig holds both levels.",
   },
   {
     title: "Trinnov Optimizer Certified",
-    trainer: "Arnaud Laborie, CEO of Trinnov",
-    description: "Trained directly by the founder and CEO of Trinnov — the gold standard in immersive audio room correction and processing. This isn't a weekend course. It's mastery.",
+    trainer: "Trinnov",
+    description:
+      "Certified in the gold standard of immersive audio room correction and processing. Trinnov Optimizer calibration delivers measurable, reference-level results that untrained ears cannot achieve.",
   },
   {
-    title: "CEDIA RP22 Immersive Audio Design",
-    trainer: "Peter Aylett",
-    description: "Trained by Peter Aylett in the industry's definitive recommended practice for immersive audio design — the framework that defines how properly engineered immersive systems are conceived and executed.",
+    title: "CEDIA RP22 Certified",
+    trainer: "CEDIA",
+    description:
+      "Certified in the industry's definitive recommended practice for immersive audio design — the framework that defines how properly engineered immersive systems are conceived and executed.",
   },
   {
     title: "CEDIA Board Member",
     trainer: "Custom Electronics Design & Installation Association",
-    description: "Helped shape the standards the industry follows today. When Craig says something meets industry standards, he helped write those standards.",
+    description:
+      "As a board member of CEDIA, Craig contributed to industry training initiatives and helped expand awareness of performance audio within the custom integration community.",
   },
   {
-    title: "HTSA Board Member",
-    trainer: "Home Technology Specialists of America",
-    description: "Active board-level participation in one of the industry's premier buying groups and knowledge-sharing organizations.",
+    title: "40+ Years Experience",
+    trainer: "1978 – Present",
+    description:
+      "Four decades working directly with the world's finest audio systems, brands, and clients — from Audio Associates and Sound Components to Definitive Audio and beyond.",
   },
   {
-    title: "PARA Board Member",
-    trainer: "Professional Audio Retailers Association",
-    description: "Long-standing engagement at the leadership level of specialty audio retail — a community that represents the finest audio dealers in North America.",
+    title: "Ascendo Immersive Audio Authorized",
+    trainer: "Ascendo Immersive Audio",
+    description:
+      "Authorized specialist for Ascendo Immersive Audio — a system Craig considers the most complete expression of reference-level immersive audio available today.",
   },
 ];
 
@@ -95,10 +379,23 @@ const brands = [
 export default function ExpertisePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <PageHero
         eyebrow="The Expertise"
         title="Forty Years."
-        subtitle="One standard — held without exception from 1979 to today."
+        subtitle="One standard — held without exception from 1978 to today."
       />
 
       {/* CAREER TIMELINE */}
@@ -143,12 +440,14 @@ export default function ExpertisePage() {
                       >
                         {item.title}
                       </h3>
-                      <p
-                        className="text-mist font-sans leading-relaxed"
+                      <div
+                        className="text-mist font-sans leading-relaxed space-y-4"
                         style={{ fontSize: "1rem", lineHeight: "1.85", maxWidth: "660px" }}
                       >
-                        {item.body}
-                      </p>
+                        {item.body.map((para, j) => (
+                          <p key={j}>{para}</p>
+                        ))}
+                      </div>
                     </div>
                   </AnimateIn>
                 ))}
