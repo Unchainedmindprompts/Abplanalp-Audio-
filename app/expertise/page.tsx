@@ -396,7 +396,7 @@ export default function ExpertisePage() {
         eyebrow="The Expertise"
         title="Forty Years."
         subtitle="One standard — held without exception from 1978 to today."
-        image="/images/ascendo.jpeg"
+        image="/images/ascendo-speakers.jpeg"
       />
 
       {/* CAREER TIMELINE */}
