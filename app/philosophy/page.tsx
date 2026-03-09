@@ -219,6 +219,7 @@ export default function PhilosophyPage() {
         eyebrow="The Philosophy"
         title="The Philosophy"
         subtitle="Four decades. One pursuit. No shortcuts."
+        image="/images/private-cinema-optimized.jpeg"
       />
 
       {/* ORIGIN STORY */}

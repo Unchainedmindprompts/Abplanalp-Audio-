@@ -1,16 +1,33 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 interface PageHeroProps {
   title: string;
   subtitle?: string;
   eyebrow?: string;
+  image?: string;
 }
 
-export default function PageHero({ title, subtitle, eyebrow }: PageHeroProps) {
+export default function PageHero({ title, subtitle, eyebrow, image }: PageHeroProps) {
   return (
     <section className="relative bg-void pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
+      {/* Background image (optional) */}
+      {image && (
+        <>
+          <Image
+            src={image}
+            alt=""
+            fill
+            priority
+            className="object-cover object-center"
+            quality={85}
+          />
+          <div className="absolute inset-0 bg-black/65" />
+        </>
+      )}
+
       {/* Subtle grid pattern */}
       <div className="absolute inset-0 grid-bg opacity-30" />
 
