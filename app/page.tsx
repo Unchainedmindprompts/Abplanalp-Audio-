@@ -360,6 +360,12 @@ export default function Home() {
               </blockquote>
             </AnimateIn>
             <AnimateIn delay={0.2}>
+              <p
+                className="text-center"
+                style={{ fontFamily: 'var(--font-sans)', fontSize: '0.75rem', fontWeight: 500, letterSpacing: '0.16em', textTransform: 'uppercase', color: '#d4b896', marginTop: '2rem', marginBottom: '2rem' }}
+              >
+                The standard hasn&rsquo;t changed. The technology has caught up.
+              </p>
               <div className="gold-divider mb-10" />
               <Link href="/philosophy" className="text-link-gold uppercase flex items-center justify-center gap-2" style={{ letterSpacing: '0.15em', fontSize: '0.75rem' }}>
                 Read the full story <ArrowRight />
