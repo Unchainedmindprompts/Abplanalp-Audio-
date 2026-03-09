@@ -1,3 +1,6 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import AnimateIn from '@/components/craig/AnimateIn'
@@ -51,6 +54,16 @@ function ArrowRight() {
 }
 
 export default function Home() {
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 60)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <>
       {/* ── HERO ── */}
@@ -70,7 +83,18 @@ export default function Home() {
         </div>
 
         {/* Navigation */}
-        <nav className="relative z-20 flex items-center justify-between px-10 py-6">
+        <nav
+          className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-10 transition-all duration-300"
+          style={{
+            background: scrolled
+              ? 'rgba(10, 8, 5, 0.92)'
+              : 'linear-gradient(180deg, rgba(0,0,0,0.65) 0%, transparent 100%)',
+            backdropFilter: scrolled ? 'blur(12px)' : 'none',
+            borderBottom: scrolled ? '1px solid rgba(212,184,150,0.12)' : 'none',
+            paddingTop: scrolled ? '14px' : '20px',
+            paddingBottom: scrolled ? '14px' : '20px',
+          }}
+        >
           <div className="flex flex-col">
             <span
               style={{
@@ -80,6 +104,7 @@ export default function Home() {
                 color: '#d4b896',
                 letterSpacing: '0.04em',
                 lineHeight: 1.2,
+                textShadow: '0 1px 8px rgba(0,0,0,0.6)',
               }}
             >
               Craig Abplanalp
@@ -91,8 +116,9 @@ export default function Home() {
                 fontWeight: 500,
                 letterSpacing: '0.22em',
                 textTransform: 'uppercase' as const,
-                color: 'rgba(212,184,150,0.6)',
+                color: 'rgba(212,184,150,0.7)',
                 marginTop: '2px',
+                textShadow: '0 1px 6px rgba(0,0,0,0.6)',
               }}
             >
               Reference Audio Specialist
@@ -110,8 +136,9 @@ export default function Home() {
                   fontWeight: 600,
                   letterSpacing: '0.18em',
                   textTransform: 'uppercase' as const,
-                  color: 'rgba(255,255,255,0.85)',
+                  color: 'rgba(255,255,255,0.9)',
                   textDecoration: 'none',
+                  textShadow: '0 1px 6px rgba(0,0,0,0.5)',
                 }}
               >
                 {item}
@@ -139,8 +166,8 @@ export default function Home() {
 
         {/* Hero Content */}
         <div
-          className="relative z-10 flex flex-col justify-center px-16 pt-16 pb-32"
-          style={{ minHeight: 'calc(100vh - 88px)' }}
+          className="relative z-10 flex flex-col justify-center px-16 pt-24 pb-32"
+          style={{ minHeight: '100vh' }}
         >
           {/* Eyebrow */}
           <div
