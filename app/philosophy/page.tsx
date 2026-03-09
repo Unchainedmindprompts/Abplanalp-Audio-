@@ -152,7 +152,7 @@ export default function PhilosophyPage() {
                 className="font-serif text-pearl font-light mb-10"
                 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", letterSpacing: "-0.01em" }}
               >
-                What Zero Compromise Actually Means
+                What Separates a Good System From an Unforgettable One
               </h2>
             </AnimateIn>
 
