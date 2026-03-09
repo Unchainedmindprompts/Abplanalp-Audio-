@@ -406,7 +406,7 @@ export default function WorkPage() {
                 {[
                   { label: "Vision", desc: "Knowing what's possible before the first conversation" },
                   { label: "Precision", desc: "Every measurement, every calibration, every seat" },
-                  { label: "Standard", desc: "The same bar held in 1979, and today" },
+                  { label: "Standard", desc: "The same bar held in 1978, and today" },
                 ].map((item) => (
                   <div key={item.label} className="text-center">
                     <div className="gold-divider mb-4 mx-auto" />
