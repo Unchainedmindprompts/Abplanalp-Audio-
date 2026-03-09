@@ -124,6 +124,7 @@ const projects = [
   },
   {
     variant: 2 as const,
+    image: "/images/private-cinema.png",
     location: "Eastside Seattle Estate",
     tag: "Music & Cinema Unified",
     headline: "One Room. Two Disciplines. Zero Compromise.",
@@ -133,6 +134,7 @@ const projects = [
   },
   {
     variant: 3 as const,
+    image: "/images/concert-stadium.png",
     location: "Medina Waterfront Estate",
     tag: "CEDIA Recognized",
     headline: "Stadium Scale in a Private Residence",
@@ -142,6 +144,7 @@ const projects = [
   },
   {
     variant: 4 as const,
+    image: "/images/reference-music-room.png",
     location: "Bellevue Private Residence",
     tag: "Intimate Reference",
     headline: "The Intimacy of a Recording Studio",
