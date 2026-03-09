@@ -87,6 +87,25 @@ const articleSchema = {
       "name": "Ascendo Immersive Audio",
       "description": "German manufacturer of reference-level immersive audio systems",
     },
+    {
+      "@type": "Organization",
+      "name": "Madrigal Audio Laboratories",
+      "description": "Audio manufacturer — home to Mark Levinson, Proceed, and Revel",
+    },
+    {
+      "@type": "Organization",
+      "name": "Wisdom Audio",
+    },
+    {
+      "@type": "Organization",
+      "name": "Kaleidescape",
+    },
+    {
+      "@type": "Person",
+      "name": "Todd Sutherland",
+      "jobTitle": "U.S. Importer",
+      "worksFor": { "@type": "Organization", "name": "Ascendo Immersive Audio" },
+    },
   ],
 };
 
@@ -331,35 +350,62 @@ export default function PhilosophyPage() {
             <div className="space-y-7 font-sans text-pearl/80 leading-relaxed" style={{ fontSize: "1.0625rem", lineHeight: "1.85" }}>
               <AnimateIn delay={0.1}>
                 <p>
-                  Today, that same pursuit finds its most complete expression in Ascendo
-                  Immersive Audio &mdash; a German manufacturer whose founding principles align
-                  with Craig&rsquo;s own in ways that feel less like coincidence and more like
-                  inevitability.
+                  The path to Ascendo didn&rsquo;t begin recently. It began more than two decades ago.
                 </p>
               </AnimateIn>
               <AnimateIn delay={0.15}>
                 <p>
-                  Where others rely on convention, Ascendo trusts science. Where others chase
-                  specifications, Ascendo pursues the physical experience of sound. The
-                  engineering principles are different. The results are audibly different.
+                  Craig has known Todd Sutherland &mdash; U.S. importer for Ascendo Immersive
+                  Audio &mdash; for over twenty years. During the years Todd represented Madrigal
+                  Audio Laboratories, home to Mark Levinson, Proceed, and Revel, Craig was at
+                  Definitive Audio serving as his dealer partner in the Pacific Northwest. Later,
+                  as Todd moved to Wisdom Audio and Kaleidescape, the relationship deepened
+                  &mdash; built on a shared philosophy about what true performance means and how
+                  it should be delivered to clients.
                 </p>
               </AnimateIn>
               <AnimateIn delay={0.2}>
                 <p>
-                  Infrasonic bass that reproduces frequencies as low as 3Hz. Bass that
-                  doesn&rsquo;t just play low &mdash; it pressurizes the room, makes a car chase
-                  feel real, turns a thunderstorm into something you feel in your chest before
-                  you consciously register it.
+                  The same uncompromising pursuit that defined Mark Levinson&rsquo;s electronics
+                  and Revel&rsquo;s loudspeakers &mdash; and continued through Wisdom Audio and
+                  Kaleidescape &mdash; now finds its immersive expression in Ascendo. This
+                  isn&rsquo;t a departure. It&rsquo;s a continuation. A progression from
+                  two-channel and traditional theater excellence to fully realized, large-scale
+                  immersive environments.
                 </p>
               </AnimateIn>
               <AnimateIn delay={0.25}>
                 <p>
-                  For Craig, finding a manufacturer whose founding beliefs mirror his own &mdash;
-                  after four decades of searching &mdash; felt less like a business decision and
-                  more like an arrival.
+                  Todd and his team have spent years not simply showing products &mdash; but
+                  demonstrating what&rsquo;s possible. Multiple Best of Show honors at CEDIA,
+                  ISE, and other major industry events reflect both execution and vision. Craig
+                  has watched that work firsthand.
                 </p>
               </AnimateIn>
               <AnimateIn delay={0.3}>
+                <p>
+                  What Ascendo makes possible is something most people &mdash; even within the
+                  industry &mdash; have never experienced. Dynamics that are unrestricted. Bass
+                  that doesn&rsquo;t just play low but pressurizes the room. Infrasonic energy
+                  that becomes something you feel in your chest before you consciously register
+                  it. When a room energizes below 20Hz and remains articulate above it, the
+                  emotional connection changes. It stops being good sound. It becomes physical,
+                  cinematic immersion.
+                </p>
+              </AnimateIn>
+              <AnimateIn delay={0.35}>
+                <p>
+                  But that level of performance only reveals itself when it&rsquo;s thoughtfully
+                  designed, precisely integrated, and aligned with the right client and
+                  environment.
+                </p>
+              </AnimateIn>
+              <AnimateIn delay={0.4}>
+                <p>
+                  That&rsquo;s what Craig brings. That&rsquo;s what this is about.
+                </p>
+              </AnimateIn>
+              <AnimateIn delay={0.45}>
                 <p
                   className="font-serif italic text-pearl"
                   style={{ fontSize: "clamp(1.2rem, 2.5vw, 1.625rem)", lineHeight: "1.55" }}

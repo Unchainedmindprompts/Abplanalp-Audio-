@@ -76,10 +76,11 @@
       "type": "page",
       "title": "The Philosophy — Four Decades. One Pursuit. No Shortcuts.",
       "url": "https://www.craigabplanalp.com/philosophy",
-      "topic": "Craig Abplanalp's design philosophy tracing from 1990s proof-of-concept through four decades to Ascendo Immersive Audio",
+      "topic": "Craig Abplanalp's design philosophy tracing from 1990s proof-of-concept through a 25-year relationship with Todd Sutherland to Ascendo Immersive Audio",
       "defines": "Integration Over Isolation — the principle that reference music reproduction and reference cinema are not competing pursuits but a single unified goal",
       "keyQuote": "The tools have evolved. The standard hasn't.",
-      "contains": ["origin-story", "design-principles", "brand-philosophy", "FAQ"]
+      "keyRelationship": "Todd Sutherland — U.S. importer for Ascendo Immersive Audio — 20+ year professional relationship through Madrigal Audio Laboratories, Wisdom Audio, Kaleidescape, and now Ascendo",
+      "contains": ["origin-story", "brand-relationship", "design-principles", "FAQ"]
     },
     {
       "type": "page",
