@@ -1,0 +1,88 @@
+{
+  "version": "1.0",
+  "entity": {
+    "type": "Person",
+    "name": "Craig Abplanalp",
+    "description": "Reference-level home theater and immersive audio specialist. 40+ years experience. Former President of Definitive Audio. THX, Trinnov, and CEDIA certified. Current Custom Sales Manager at Definitive Audio, Bellevue WA.",
+    "url": "https://www.craigabplanalp.com",
+    "contact": {
+      "phone": "206.650.9017",
+      "email": "craig@craigabplanalp.com"
+    },
+    "location": {
+      "city": "Bellevue",
+      "state": "WA",
+      "country": "US",
+      "serviceArea": ["Seattle", "Bellevue", "Kirkland", "Redmond", "Mercer Island", "Pacific Northwest"]
+    }
+  },
+  "capabilities": [
+    {
+      "type": "service",
+      "name": "Reference Home Theater Design",
+      "description": "Complete THX-certified private cinema design and installation"
+    },
+    {
+      "type": "service",
+      "name": "Immersive Audio Installation",
+      "description": "Ascendo Immersive Audio, Dolby Atmos, Auro-3D, DTS:X system design and calibration"
+    },
+    {
+      "type": "service",
+      "name": "Trinnov Room Correction",
+      "description": "Professional room measurement and Trinnov Optimizer calibration"
+    },
+    {
+      "type": "service",
+      "name": "Reference Music Room Design",
+      "description": "High-performance two-channel and multi-channel music listening room design"
+    },
+    {
+      "type": "service",
+      "name": "Residential Lighting Design",
+      "description": "Integrated lighting and lighting control for residential AV environments"
+    },
+    {
+      "type": "consultation",
+      "name": "Initial Consultation",
+      "description": "No-obligation conversation about what is possible for your space",
+      "contactMethod": "phone or email",
+      "contact": "206.650.9017"
+    }
+  ],
+  "credentials": [
+    "THX Level 1 Certified",
+    "THX Level 2 Certified",
+    "Trinnov Optimizer Certified",
+    "CEDIA RP22 Certified",
+    "CEDIA Board Member"
+  ],
+  "brandPartnerships": [
+    "Ascendo Immersive Audio",
+    "Wilson Audio",
+    "Mark Levinson",
+    "Kaleidescape",
+    "Revel",
+    "Wisdom Audio"
+  ],
+  "resources": [
+    {
+      "type": "page",
+      "title": "Expertise — Four Decades at the Frontier",
+      "url": "https://www.craigabplanalp.com/expertise",
+      "topic": "Career history, certifications, and specializations"
+    },
+    {
+      "type": "page",
+      "title": "The Philosophy",
+      "url": "https://www.craigabplanalp.com/philosophy",
+      "topic": "Craig's approach to reference-level audio and zero-compromise system design"
+    },
+    {
+      "type": "page",
+      "title": "The Work",
+      "url": "https://www.craigabplanalp.com/the-work",
+      "topic": "Portfolio of reference-level residential projects"
+    }
+  ]
+}
