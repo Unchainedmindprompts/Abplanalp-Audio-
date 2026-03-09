@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import AnimateIn from '@/components/craig/AnimateIn'
+import Footer from '@/components/craig/Footer'
 
 // ── Icons ──────────────────────────────────────────────────────────────────
 function WaveformIcon() {
@@ -538,6 +539,8 @@ export default function Home() {
           </AnimateIn>
         </div>
       </section>
+
+      <Footer />
     </>
   )
 }
