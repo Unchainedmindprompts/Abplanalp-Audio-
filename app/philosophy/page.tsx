@@ -4,13 +4,172 @@ import PageHero from "@/components/craig/PageHero";
 import AnimateIn from "@/components/craig/AnimateIn";
 
 export const metadata: Metadata = {
-  title: "The Philosophy",
+  title: "The Philosophy | Craig Abplanalp — Four Decades. One Pursuit.",
   description:
-    "Zero compromise. From the beginning. The story of how Craig Abplanalp spent four decades pursuing the impossible — and proved it wasn't.",
+    "From a landmark proof-of-concept system in the 1990s to Ascendo Immersive Audio today — Craig Abplanalp's philosophy has never wavered. The tools have evolved. The standard hasn't.",
+  alternates: {
+    canonical: "https://www.craigabplanalp.com/philosophy",
+  },
   openGraph: {
     title: "The Philosophy | Craig Abplanalp",
-    description: "Zero compromise. From the beginning. Four decades of reference-level pursuit.",
+    description:
+      "Four decades. One pursuit. The tools have evolved. The standard hasn't.",
+    url: "https://www.craigabplanalp.com/philosophy",
+    type: "article",
   },
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Philosophy — Four Decades. One Pursuit. No Shortcuts.",
+  "description":
+    "Craig Abplanalp's design philosophy traces from a landmark proof-of-concept system in the late 1990s through four decades of reference-level work to his current partnership with Ascendo Immersive Audio.",
+  "author": {
+    "@type": "Person",
+    "name": "Craig Abplanalp",
+    "url": "https://www.craigabplanalp.com",
+    "jobTitle": "Custom Sales Manager",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Definitive Audio",
+    },
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Craig Abplanalp",
+    "url": "https://www.craigabplanalp.com",
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.craigabplanalp.com/philosophy",
+  },
+  "url": "https://www.craigabplanalp.com/philosophy",
+  "about": [
+    { "@type": "Thing", "name": "Reference Home Theater Design" },
+    { "@type": "Thing", "name": "Immersive Audio Philosophy" },
+    { "@type": "Thing", "name": "Wilson Audio" },
+    { "@type": "Thing", "name": "Mark Levinson" },
+    { "@type": "Thing", "name": "Ascendo Immersive Audio" },
+    { "@type": "Thing", "name": "Room Acoustics" },
+    { "@type": "Thing", "name": "Audio Visual Integration" },
+  ],
+  "keywords": [
+    "reference home theater philosophy",
+    "immersive audio design principles",
+    "Wilson Audio Grand Slam",
+    "Mark Levinson No. 33",
+    "Ascendo Immersive Audio",
+    "room acoustics and calibration",
+    "music and cinema integration",
+    "Craig Abplanalp philosophy",
+    "Pacific Northwest home theater",
+    "reference audio system design",
+  ],
+  "mentions": [
+    {
+      "@type": "Product",
+      "name": "Wilson Audio Grand Slam",
+      "brand": { "@type": "Brand", "name": "Wilson Audio" },
+    },
+    {
+      "@type": "Product",
+      "name": "Mark Levinson No. 33 Monoblock",
+      "brand": { "@type": "Brand", "name": "Mark Levinson" },
+    },
+    {
+      "@type": "Product",
+      "name": "Wilson Audio WATT/Puppy",
+      "brand": { "@type": "Brand", "name": "Wilson Audio" },
+    },
+    {
+      "@type": "Organization",
+      "name": "Ascendo Immersive Audio",
+      "description": "German manufacturer of reference-level immersive audio systems",
+    },
+  ],
+};
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Craig Abplanalp",
+  "url": "https://www.craigabplanalp.com",
+  "jobTitle": "Custom Sales Manager",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Definitive Audio",
+    "url": "https://definitive.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bellevue",
+      "addressRegion": "WA",
+      "addressCountry": "US",
+    },
+  },
+  "description":
+    "Reference-level home theater and immersive audio specialist with over 40 years of experience. Known for pioneering the integration of reference music reproduction and reference cinema in a single environment. Current authorized specialist for Ascendo Immersive Audio.",
+  "knowsAbout": [
+    "Reference home theater design",
+    "Immersive audio systems",
+    "Room acoustics and calibration",
+    "Wilson Audio loudspeakers",
+    "Mark Levinson amplification",
+    "Ascendo Immersive Audio",
+    "Dolby Atmos",
+    "Trinnov room correction",
+    "Audio visual system integration",
+    "Residential lighting design",
+  ],
+  "telephone": "206.650.9017",
+  "email": "craig@craigabplanalp.com",
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Craig Abplanalp's design philosophy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Craig Abplanalp's philosophy is built on four principles: physics before marketing (every claim grounded in measurement), every seat not just the sweet spot (consistent performance at every listening position), integration over isolation (music and cinema as a single unified pursuit), and the room is half the system (acoustics and space design before equipment selection). This philosophy was established through a landmark proof-of-concept system in the late 1990s and has guided every project in the four decades since.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "What was Craig Abplanalp's proof of concept system in the 1990s?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the late 1990s, Craig Abplanalp designed a reference system using Wilson Audio Grand Slams as main front speakers, each driven by a dedicated Mark Levinson No. 33 Monoblock amplifier — one amplifier per speaker. Wilson Audio WATT/Puppies handled center and surround channels, with dual stacked Sony G90 CRT projectors and Faroudja Line Quadrupler processing completing the picture. The system demonstrated that reference music reproduction and reference cinema could be achieved in a single unified environment.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Why does Craig Abplanalp recommend Ascendo Immersive Audio?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Craig Abplanalp recommends Ascendo Immersive Audio because their founding engineering principles align with his own design philosophy — prioritizing physics over marketing, measurable performance over specifications, and the physical experience of sound over convention. Ascendo's infrasonic bass capability, reproducing frequencies as low as 3Hz, represents the most complete expression of Craig's four-decade pursuit of unified reference music and cinema reproduction.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Can one room serve as both a reference music room and a home theater?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Craig Abplanalp's core philosophy — established through a proof-of-concept system in the late 1990s — is that the boundary between audiophile music reproduction and cinematic immersion is artificial. With the right room design, component selection, and calibration, a single space can deliver reference-level performance for both music and cinema simultaneously. This integration is one of the defining principles of Craig's approach.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "What does Craig Abplanalp mean by the room is half the system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Craig Abplanalp's principle that the room is half the system means that no amount of investment in loudspeakers, amplification, or electronics can overcome the acoustic limitations of a poorly designed or untreated space. His design process always begins with the room — its dimensions, surfaces, acoustic treatment, and integration with lighting and control systems — before any equipment decisions are made.",
+      },
+    },
+  ],
 };
 
 function ArrowRight() {
@@ -24,10 +183,23 @@ function ArrowRight() {
 export default function PhilosophyPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <PageHero
         eyebrow="The Philosophy"
-        title="Zero Compromise."
-        subtitle="From the beginning. And every day since."
+        title="The Philosophy"
+        subtitle="Four decades. One pursuit. No shortcuts."
       />
 
       {/* ORIGIN STORY */}
@@ -39,7 +211,7 @@ export default function PhilosophyPage() {
               <div className="flex items-center gap-6 mb-12">
                 <div className="gold-divider-left" />
                 <span className="text-gold uppercase tracking-widest font-sans" style={{ fontSize: "0.65rem", letterSpacing: "0.24em" }}>
-                  The Origin
+                  Origin
                 </span>
               </div>
             </AnimateIn>
@@ -54,9 +226,9 @@ export default function PhilosophyPage() {
 
               <AnimateIn delay={0.1}>
                 <p>
-                  What would it look like to build a home environment with absolutely zero
-                  compromise &mdash; where reference music reproduction and reference cinema
-                  experience weren&rsquo;t competing priorities, but a single unified pursuit?
+                  What would it look like to build a home environment where reference music
+                  reproduction and reference cinema experience weren&rsquo;t competing
+                  priorities &mdash; but a single unified pursuit?
                 </p>
               </AnimateIn>
 
@@ -137,7 +309,7 @@ export default function PhilosophyPage() {
         </div>
       </section>
 
-      {/* WHAT ZERO COMPROMISE MEANS */}
+      {/* THE PRINCIPLES */}
       <section className="section-padding" style={{ background: "#111111" }}>
         <div className="craig-container">
           <div className="max-w-3xl mx-auto">
@@ -231,9 +403,9 @@ export default function PhilosophyPage() {
               </AnimateIn>
               <AnimateIn delay={0.15}>
                 <p>
-                  Where others compromise, Ascendo chooses precision. Where others market myths,
-                  Ascendo trusts science. And where others settle for good enough, Ascendo
-                  &mdash; like Craig &mdash; refuses.
+                  Where others rely on convention, Ascendo trusts science. Where others chase
+                  specifications, Ascendo pursues the physical experience of sound. The
+                  engineering principles are different. The results are audibly different.
                 </p>
               </AnimateIn>
               <AnimateIn delay={0.2}>
@@ -245,11 +417,18 @@ export default function PhilosophyPage() {
                 </p>
               </AnimateIn>
               <AnimateIn delay={0.25}>
+                <p>
+                  For Craig, finding a manufacturer whose founding beliefs mirror his own &mdash;
+                  after four decades of searching &mdash; felt less like a business decision and
+                  more like an arrival.
+                </p>
+              </AnimateIn>
+              <AnimateIn delay={0.3}>
                 <p
                   className="font-serif italic text-pearl"
                   style={{ fontSize: "clamp(1.2rem, 2.5vw, 1.625rem)", lineHeight: "1.55" }}
                 >
-                  This is what zero compromise sounds like in 2026.
+                  This is what forty-five years of pursuit looks like when it finds its instrument.
                 </p>
               </AnimateIn>
             </div>

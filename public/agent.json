@@ -74,9 +74,12 @@
     },
     {
       "type": "page",
-      "title": "The Philosophy",
+      "title": "The Philosophy — Four Decades. One Pursuit. No Shortcuts.",
       "url": "https://www.craigabplanalp.com/philosophy",
-      "topic": "Craig's approach to reference-level audio and zero-compromise system design"
+      "topic": "Craig Abplanalp's design philosophy tracing from 1990s proof-of-concept through four decades to Ascendo Immersive Audio",
+      "defines": "Integration Over Isolation — the principle that reference music reproduction and reference cinema are not competing pursuits but a single unified goal",
+      "keyQuote": "The tools have evolved. The standard hasn't.",
+      "contains": ["origin-story", "design-principles", "brand-philosophy", "FAQ"]
     },
     {
       "type": "page",
