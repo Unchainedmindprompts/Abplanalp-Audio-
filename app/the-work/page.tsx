@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import PageHero from "@/components/craig/PageHero";
 import AnimateIn from "@/components/craig/AnimateIn";
@@ -113,6 +114,7 @@ function TheaterViz({ variant }: { variant: 1 | 2 | 3 | 4 }) {
 const projects = [
   {
     variant: 1 as const,
+    image: "/images/kaleidescape-theater.png",
     location: "Pacific Northwest Residence",
     tag: "Ascendo Immersive Audio",
     headline: "Purpose-Built for Reference",
@@ -175,9 +177,19 @@ export default function WorkPage() {
               <AnimateIn key={project.location} delay={i * 0.1} direction="up">
                 <div className="cinema-card overflow-hidden">
                   <div className="grid grid-cols-1 lg:grid-cols-2">
-                    {/* Theater visualization */}
+                    {/* Theater visualization / photo */}
                     <div className="relative aspect-[16/9] lg:aspect-auto lg:min-h-[320px] overflow-hidden">
-                      <TheaterViz variant={project.variant} />
+                      {'image' in project && project.image ? (
+                        <Image
+                          src={project.image}
+                          alt={project.headline}
+                          fill
+                          className="object-cover object-center"
+                          sizes="(max-width: 1024px) 100vw, 50vw"
+                        />
+                      ) : (
+                        <TheaterViz variant={project.variant} />
+                      )}
                       {/* Tag overlay */}
                       <div className="absolute top-5 left-5 z-10">
                         <span
