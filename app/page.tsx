@@ -70,7 +70,7 @@ export default function Home() {
 
         {/* Hero Content */}
         <div
-          className="relative z-10 flex flex-col justify-center px-16 pt-32 pb-32"
+          className="relative z-10 flex flex-col justify-center px-6 sm:px-16 pt-32 pb-32"
           style={{ minHeight: '100vh' }}
         >
           {/* Eyebrow */}
@@ -129,7 +129,7 @@ export default function Home() {
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex items-center gap-5">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <Link
               href="/contact"
               style={{
