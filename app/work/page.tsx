@@ -155,7 +155,7 @@ export default function WorkPage() {
       <PageHero
         eyebrow="The Work"
         title="Results That Speak."
-        subtitle="Seven figures. Zero compromises. Client confidentiality is respected — what follows represents the caliber of work, not its specifics."
+        subtitle="The clients are confidential. The results are not. What follows represents the standard every project is held to."
       />
 
       {/* PROJECTS */}
