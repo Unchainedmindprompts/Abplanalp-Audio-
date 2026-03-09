@@ -121,7 +121,7 @@ export default function Navigation() {
             {/* Spacer for nav height */}
             <div className="h-18 md:h-20" />
 
-            <div className="flex-1 flex flex-col justify-center items-center gap-10 pb-20">
+            <div className="flex-1 min-h-0 overflow-y-auto flex flex-col justify-center items-center gap-8 py-10">
               {navLinks.map((link, i) => (
                 <motion.div
                   key={link.href}

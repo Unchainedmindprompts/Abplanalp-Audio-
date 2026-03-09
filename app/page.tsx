@@ -1,10 +1,6 @@
-'use client'
-
-import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import AnimateIn from '@/components/craig/AnimateIn'
-import Footer from '@/components/craig/Footer'
 
 // ── Icons ──────────────────────────────────────────────────────────────────
 function WaveformIcon() {
@@ -54,20 +50,10 @@ function ArrowRight() {
 }
 
 export default function Home() {
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 60)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
   return (
     <>
       {/* ── HERO ── */}
-      <main className="relative min-h-screen w-full overflow-hidden bg-black">
+      <section className="relative min-h-screen w-full overflow-hidden bg-black">
 
         {/* Hero Background Image */}
         <div className="absolute inset-0 z-0">
@@ -82,91 +68,9 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/45" />
         </div>
 
-        {/* Navigation */}
-        <nav
-          className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-10 transition-all duration-300"
-          style={{
-            background: scrolled
-              ? 'rgba(10, 8, 5, 0.92)'
-              : 'linear-gradient(180deg, rgba(0,0,0,0.65) 0%, transparent 100%)',
-            backdropFilter: scrolled ? 'blur(12px)' : 'none',
-            borderBottom: scrolled ? '1px solid rgba(212,184,150,0.12)' : 'none',
-            paddingTop: scrolled ? '14px' : '20px',
-            paddingBottom: scrolled ? '14px' : '20px',
-          }}
-        >
-          <div className="flex flex-col">
-            <span
-              style={{
-                fontFamily: "'Cormorant Garamond', Georgia, serif",
-                fontSize: '18px',
-                fontWeight: 400,
-                color: '#d4b896',
-                letterSpacing: '0.04em',
-                lineHeight: 1.2,
-                textShadow: '0 1px 8px rgba(0,0,0,0.6)',
-              }}
-            >
-              Craig Abplanalp
-            </span>
-            <span
-              style={{
-                fontFamily: "'Montserrat', sans-serif",
-                fontSize: '9px',
-                fontWeight: 500,
-                letterSpacing: '0.22em',
-                textTransform: 'uppercase' as const,
-                color: 'rgba(212,184,150,0.7)',
-                marginTop: '2px',
-                textShadow: '0 1px 6px rgba(0,0,0,0.6)',
-              }}
-            >
-              Reference Audio Specialist
-            </span>
-          </div>
-
-          <div className="flex items-center gap-10">
-            {['Philosophy', 'Expertise', 'The Work', 'Contact'].map((item) => (
-              <Link
-                key={item}
-                href={`/${item.toLowerCase().replace(' ', '-')}`}
-                style={{
-                  fontFamily: "'Montserrat', sans-serif",
-                  fontSize: '11px',
-                  fontWeight: 600,
-                  letterSpacing: '0.18em',
-                  textTransform: 'uppercase' as const,
-                  color: 'rgba(255,255,255,0.9)',
-                  textDecoration: 'none',
-                  textShadow: '0 1px 6px rgba(0,0,0,0.5)',
-                }}
-              >
-                {item}
-              </Link>
-            ))}
-            <Link
-              href="/contact"
-              style={{
-                fontFamily: "'Montserrat', sans-serif",
-                fontSize: '10px',
-                fontWeight: 600,
-                letterSpacing: '0.16em',
-                textTransform: 'uppercase' as const,
-                color: '#d4b896',
-                border: '1px solid #d4b896',
-                padding: '10px 22px',
-                textDecoration: 'none',
-                display: 'inline-block',
-              }}
-            >
-              Start a Conversation
-            </Link>
-          </div>
-        </nav>
-
         {/* Hero Content */}
         <div
-          className="relative z-10 flex flex-col justify-center px-16 pt-24 pb-32"
+          className="relative z-10 flex flex-col justify-center px-16 pt-32 pb-32"
           style={{ minHeight: '100vh' }}
         >
           {/* Eyebrow */}
@@ -286,7 +190,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </main>
+      </section>
 
       {/* ── THREE PILLARS ── */}
       <section className="bg-void section-padding border-t border-slate/30">
@@ -556,8 +460,6 @@ export default function Home() {
           </AnimateIn>
         </div>
       </section>
-
-      <Footer />
     </>
   )
 }
