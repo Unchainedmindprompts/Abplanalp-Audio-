@@ -309,6 +309,69 @@ export default function PhilosophyPage() {
         </div>
       </section>
 
+      {/* ASCENDO CONNECTION */}
+      <section className="section-padding" style={{ background: "#0d0d0d" }}>
+        <div className="craig-container">
+          <div className="max-w-3xl mx-auto">
+            <AnimateIn>
+              <div className="flex items-center gap-6 mb-12">
+                <div className="gold-divider-left" />
+                <span className="text-gold uppercase tracking-widest font-sans" style={{ fontSize: "0.65rem", letterSpacing: "0.24em" }}>
+                  Where It Leads
+                </span>
+              </div>
+              <h2
+                className="font-serif text-pearl font-light mb-8"
+                style={{ fontSize: "clamp(1.875rem, 4vw, 2.75rem)", letterSpacing: "-0.01em" }}
+              >
+                The Most Complete Expression Yet
+              </h2>
+            </AnimateIn>
+
+            <div className="space-y-7 font-sans text-pearl/80 leading-relaxed" style={{ fontSize: "1.0625rem", lineHeight: "1.85" }}>
+              <AnimateIn delay={0.1}>
+                <p>
+                  Today, that same pursuit finds its most complete expression in Ascendo
+                  Immersive Audio &mdash; a German manufacturer whose founding principles align
+                  with Craig&rsquo;s own in ways that feel less like coincidence and more like
+                  inevitability.
+                </p>
+              </AnimateIn>
+              <AnimateIn delay={0.15}>
+                <p>
+                  Where others rely on convention, Ascendo trusts science. Where others chase
+                  specifications, Ascendo pursues the physical experience of sound. The
+                  engineering principles are different. The results are audibly different.
+                </p>
+              </AnimateIn>
+              <AnimateIn delay={0.2}>
+                <p>
+                  Infrasonic bass that reproduces frequencies as low as 3Hz. Bass that
+                  doesn&rsquo;t just play low &mdash; it pressurizes the room, makes a car chase
+                  feel real, turns a thunderstorm into something you feel in your chest before
+                  you consciously register it.
+                </p>
+              </AnimateIn>
+              <AnimateIn delay={0.25}>
+                <p>
+                  For Craig, finding a manufacturer whose founding beliefs mirror his own &mdash;
+                  after four decades of searching &mdash; felt less like a business decision and
+                  more like an arrival.
+                </p>
+              </AnimateIn>
+              <AnimateIn delay={0.3}>
+                <p
+                  className="font-serif italic text-pearl"
+                  style={{ fontSize: "clamp(1.2rem, 2.5vw, 1.625rem)", lineHeight: "1.55" }}
+                >
+                  This is what forty-five years of pursuit looks like when it finds its instrument.
+                </p>
+              </AnimateIn>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* THE PRINCIPLES */}
       <section className="section-padding" style={{ background: "#111111" }}>
         <div className="craig-container">
@@ -368,69 +431,6 @@ export default function PhilosophyPage() {
                   </div>
                 </AnimateIn>
               ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ASCENDO CONNECTION */}
-      <section className="section-padding" style={{ background: "#0d0d0d" }}>
-        <div className="craig-container">
-          <div className="max-w-3xl mx-auto">
-            <AnimateIn>
-              <div className="flex items-center gap-6 mb-12">
-                <div className="gold-divider-left" />
-                <span className="text-gold uppercase tracking-widest font-sans" style={{ fontSize: "0.65rem", letterSpacing: "0.24em" }}>
-                  Where It Leads
-                </span>
-              </div>
-              <h2
-                className="font-serif text-pearl font-light mb-8"
-                style={{ fontSize: "clamp(1.875rem, 4vw, 2.75rem)", letterSpacing: "-0.01em" }}
-              >
-                The Most Complete Expression Yet
-              </h2>
-            </AnimateIn>
-
-            <div className="space-y-7 font-sans text-pearl/80 leading-relaxed" style={{ fontSize: "1.0625rem", lineHeight: "1.85" }}>
-              <AnimateIn delay={0.1}>
-                <p>
-                  Today, that same pursuit finds its most complete expression in Ascendo
-                  Immersive Audio &mdash; a German manufacturer whose founding principles align
-                  with Craig&rsquo;s own in ways that feel less like coincidence and more like
-                  inevitability.
-                </p>
-              </AnimateIn>
-              <AnimateIn delay={0.15}>
-                <p>
-                  Where others rely on convention, Ascendo trusts science. Where others chase
-                  specifications, Ascendo pursues the physical experience of sound. The
-                  engineering principles are different. The results are audibly different.
-                </p>
-              </AnimateIn>
-              <AnimateIn delay={0.2}>
-                <p>
-                  Infrasonic bass that reproduces frequencies as low as 3Hz. Bass that
-                  doesn&rsquo;t just play low &mdash; it pressurizes the room, makes a car chase
-                  feel real, turns a thunderstorm into something you feel in your chest before
-                  you consciously register it.
-                </p>
-              </AnimateIn>
-              <AnimateIn delay={0.25}>
-                <p>
-                  For Craig, finding a manufacturer whose founding beliefs mirror his own &mdash;
-                  after four decades of searching &mdash; felt less like a business decision and
-                  more like an arrival.
-                </p>
-              </AnimateIn>
-              <AnimateIn delay={0.3}>
-                <p
-                  className="font-serif italic text-pearl"
-                  style={{ fontSize: "clamp(1.2rem, 2.5vw, 1.625rem)", lineHeight: "1.55" }}
-                >
-                  This is what forty-five years of pursuit looks like when it finds its instrument.
-                </p>
-              </AnimateIn>
             </div>
           </div>
         </div>
