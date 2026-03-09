@@ -24,7 +24,7 @@ export default function PageHero({ title, subtitle, eyebrow, image }: PageHeroPr
             className="object-cover object-center"
             quality={85}
           />
-          <div className="absolute inset-0 bg-black/65" />
+          <div className="absolute inset-0 bg-black/40" />
         </>
       )}
 
