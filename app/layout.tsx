@@ -1,7 +1,22 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, Montserrat } from "next/font/google";
 import "./globals.css";
-import Navigation from "@/components/craig/Navigation";
-import Footer from "@/components/craig/Footer";
+import LayoutContent from "./LayoutContent";
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-cormorant",
+});
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  display: "swap",
+  variable: "--font-montserrat",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://craigabplanalp.com"),
@@ -116,17 +131,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
       </head>
-      <body className="antialiased bg-void text-pearl">
-        <Navigation />
-        <main>{children}</main>
-        <Footer />
+      <body className={`${cormorant.variable} ${montserrat.variable} antialiased bg-void text-pearl`}>
+        <LayoutContent>{children}</LayoutContent>
       </body>
     </html>
   );
