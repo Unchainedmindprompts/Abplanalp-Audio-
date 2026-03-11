@@ -1,16 +1,33 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 interface PageHeroProps {
   title: string;
   subtitle?: string;
   eyebrow?: string;
+  image?: string;
 }
 
-export default function PageHero({ title, subtitle, eyebrow }: PageHeroProps) {
+export default function PageHero({ title, subtitle, eyebrow, image }: PageHeroProps) {
   return (
     <section className="relative bg-void pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
+      {/* Background image (optional) */}
+      {image && (
+        <>
+          <Image
+            src={image}
+            alt=""
+            fill
+            priority
+            className="object-cover object-center"
+            quality={85}
+          />
+          <div className="absolute inset-0 bg-black/30" />
+        </>
+      )}
+
       {/* Subtle grid pattern */}
       <div className="absolute inset-0 grid-bg opacity-30" />
 
@@ -61,8 +78,8 @@ export default function PageHero({ title, subtitle, eyebrow }: PageHeroProps) {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35, ease: "easeOut" }}
-            className="text-mist font-sans mt-6 max-w-xl mx-auto leading-relaxed"
-            style={{ fontSize: "1.0625rem" }}
+            className="text-pearl/90 font-sans mt-6 max-w-xl mx-auto leading-relaxed"
+            style={{ fontSize: "1.1875rem" }}
           >
             {subtitle}
           </motion.p>

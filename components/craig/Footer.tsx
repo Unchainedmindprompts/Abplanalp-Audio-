@@ -102,7 +102,7 @@ export default function Footer() {
               &copy; {currentYear} Craig Abplanalp. All rights reserved.
             </p>
             <p className="text-mist/40 text-xs font-sans">
-              Zero Compromise. Since 1979.
+              Zero Compromise. Since 1978.
             </p>
           </div>
         </div>
