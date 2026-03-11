@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/images/craig-theater-room.webp",
-        alt: "Reference-level private home cinema designed by Craig Abplanalp",
+        url: "/images/craig-great-room.webp",
+        alt: "Luxury great room with reference-level audio and video integration — Craig Abplanalp",
       },
     ],
   },
@@ -49,8 +49,8 @@ const articleSchema = {
   },
   image: {
     "@type": "ImageObject",
-    url: `${SITE_URL}/images/craig-theater-room.webp`,
-    description: "Reference-level private home cinema designed by Craig Abplanalp",
+    url: `${SITE_URL}/images/craig-great-room.webp`,
+    description: "Luxury great room with reference-level audio and video integration — Craig Abplanalp",
   },
   datePublished: PUB_DATE,
   dateModified: PUB_DATE,
@@ -333,8 +333,8 @@ export default function ArticlePage() {
         }}
       >
         <Image
-          src="/images/craig-theater-room.webp"
-          alt="Reference-level private home cinema designed by Craig Abplanalp"
+          src="/images/craig-great-room.webp"
+          alt="Luxury great room with reference-level audio and video integration — Craig Abplanalp"
           fill
           priority
           className="object-cover object-center"
@@ -344,7 +344,7 @@ export default function ArticlePage() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.48) 55%, rgba(0,0,0,0.32) 100%)",
+              "linear-gradient(to right, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.38) 100%)",
           }}
         />
         <div className="craig-container relative z-10">
@@ -678,6 +678,34 @@ export default function ArticlePage() {
                 That conversation, had early enough, changes everything.
               </p>
             </div>
+
+            {/* Dedicated theater image */}
+            <AnimateIn direction="up">
+              <div className="my-10 relative overflow-hidden" style={{ aspectRatio: "16/7" }}>
+                <Image
+                  src="/images/craig-dedicated-theater.webp"
+                  alt="Dedicated reference home theater with leather seating and precision projection — Craig Abplanalp"
+                  fill
+                  className="object-cover object-center"
+                  quality={85}
+                />
+                <div
+                  className="absolute inset-0"
+                  style={{ background: "rgba(0,0,0,0.18)" }}
+                />
+                <p
+                  className="absolute bottom-0 left-0 right-0 px-5 py-3 font-sans"
+                  style={{
+                    background: "rgba(0,0,0,0.72)",
+                    color: "#7a7a7a",
+                    fontSize: "0.65rem",
+                    letterSpacing: "0.08em",
+                  }}
+                >
+                  A dedicated reference theater &mdash; designed from the floor up to perform
+                </p>
+              </div>
+            </AnimateIn>
 
             {/* H2: A Different Kind of Investment */}
             <GoldRule />
