@@ -507,7 +507,13 @@ export default function ArticlePage() {
           className="object-cover object-center"
           quality={85}
         />
-        <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.72)" }} />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(0,0,0,0.68) 0%, rgba(0,0,0,0.42) 55%, rgba(0,0,0,0.28) 100%)",
+          }}
+        />
         <div className="craig-container relative z-10">
           {/* Breadcrumb */}
           <nav
@@ -518,20 +524,20 @@ export default function ArticlePage() {
             <Link
               href="/"
               className="transition-colors duration-200 hover:text-gold"
-              style={{ color: "#7a7a7a" }}
+              style={{ color: "#a0a0a0" }}
             >
               Home
             </Link>
-            <span style={{ color: "#555555" }}>/</span>
+            <span style={{ color: "#777777" }}>/</span>
             <Link
               href="/articles"
               className="transition-colors duration-200 hover:text-gold"
-              style={{ color: "#7a7a7a" }}
+              style={{ color: "#a0a0a0" }}
             >
               Articles
             </Link>
-            <span style={{ color: "#555555" }}>/</span>
-            <span style={{ color: "#6a6a6a" }}>Why Your Home Theater&hellip;</span>
+            <span style={{ color: "#777777" }}>/</span>
+            <span style={{ color: "#909090" }}>Why Your Home Theater&hellip;</span>
           </nav>
 
           <AnimateIn direction="up">
@@ -561,9 +567,9 @@ export default function ArticlePage() {
 
             {/* Byline */}
             <div className="flex items-center gap-5 font-sans" style={{ fontSize: "0.75rem" }}>
-              <span style={{ color: "#7a7a7a" }}>{PUB_DATE_DISPLAY}</span>
-              <div style={{ width: "1px", height: "14px", background: "#505050" }} />
-              <span style={{ color: "#7a7a7a" }}>Craig Abplanalp</span>
+              <span style={{ color: "#a0a0a0" }}>{PUB_DATE_DISPLAY}</span>
+              <div style={{ width: "1px", height: "14px", background: "#707070" }} />
+              <span style={{ color: "#a0a0a0" }}>Craig Abplanalp</span>
             </div>
           </AnimateIn>
         </div>
