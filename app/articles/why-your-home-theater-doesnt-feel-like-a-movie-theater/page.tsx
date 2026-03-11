@@ -430,7 +430,7 @@ function ComparisonTable() {
 // ─── Shared text styles ───────────────────────────────────────────────────────
 
 const bodyText: CSSProperties = {
-  color: "rgba(154,154,154,0.9)",
+  color: "rgba(200,200,200,0.92)",
   fontSize: "1rem",
   lineHeight: "1.85",
   fontFamily: "sans-serif",
@@ -482,7 +482,7 @@ export default function ArticlePage() {
           background: "#0a0a0a",
           paddingTop: "7rem",
           paddingBottom: "3.5rem",
-          borderBottom: "1px solid rgba(42,42,42,0.6)",
+          borderBottom: "1px solid rgba(70,70,70,0.7)",
         }}
       >
         <div className="craig-container">
@@ -495,20 +495,20 @@ export default function ArticlePage() {
             <Link
               href="/"
               className="transition-colors duration-200 hover:text-gold"
-              style={{ color: "#4a4a4a" }}
+              style={{ color: "#7a7a7a" }}
             >
               Home
             </Link>
-            <span style={{ color: "#2a2a2a" }}>/</span>
+            <span style={{ color: "#555555" }}>/</span>
             <Link
               href="/articles"
               className="transition-colors duration-200 hover:text-gold"
-              style={{ color: "#4a4a4a" }}
+              style={{ color: "#7a7a7a" }}
             >
               Articles
             </Link>
-            <span style={{ color: "#2a2a2a" }}>/</span>
-            <span style={{ color: "#2e2e2e" }}>Why Your Home Theater&hellip;</span>
+            <span style={{ color: "#555555" }}>/</span>
+            <span style={{ color: "#6a6a6a" }}>Why Your Home Theater&hellip;</span>
           </nav>
 
           <AnimateIn direction="up">
@@ -538,9 +538,9 @@ export default function ArticlePage() {
 
             {/* Byline */}
             <div className="flex items-center gap-5 font-sans" style={{ fontSize: "0.75rem" }}>
-              <span style={{ color: "#5a5a5a" }}>{PUB_DATE_DISPLAY}</span>
-              <div style={{ width: "1px", height: "14px", background: "#2a2a2a" }} />
-              <span style={{ color: "#5a5a5a" }}>Craig Abplanalp</span>
+              <span style={{ color: "#7a7a7a" }}>{PUB_DATE_DISPLAY}</span>
+              <div style={{ width: "1px", height: "14px", background: "#505050" }} />
+              <span style={{ color: "#7a7a7a" }}>Craig Abplanalp</span>
             </div>
           </AnimateIn>
         </div>
