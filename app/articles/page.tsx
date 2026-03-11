@@ -43,6 +43,13 @@ interface ArticleCard {
 
 const articles: ArticleCard[] = [
   {
+    slug: "the-most-overlooked-room-in-every-luxury-home",
+    title: "The Most Overlooked Room in Every Luxury Home",
+    date: "March 11, 2026",
+    excerpt:
+      "Luxury homes invest $150,000 in kitchens and $100,000 in master baths. The room used most every evening gets a soundbar. On the awareness gap that costs high-end homeowners the experience they deserve.",
+  },
+  {
     slug: "why-your-home-theater-doesnt-feel-like-a-movie-theater",
     title: "Why Your Home Theater Doesn't Feel Like a Movie Theater — And How to Fix It",
     date: "March 11, 2026",
