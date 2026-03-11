@@ -191,7 +191,7 @@ function FrequencyChart() {
       </p>
       <p
         className="font-sans mb-8"
-        style={{ color: "#4a4a4a", fontSize: "0.72rem", letterSpacing: "0.1em" }}
+        style={{ color: "#7a7a7a", fontSize: "0.72rem", letterSpacing: "0.1em" }}
       >
         Logarithmic scale &nbsp;·&nbsp; 1 Hz – 20,000 Hz
       </p>
@@ -205,13 +205,13 @@ function FrequencyChart() {
             style={{
               left: band.left,
               width: band.width,
-              background: band.accent ? "rgba(201,168,76,0.13)" : "#1a1a1a",
-              border: `1px solid ${band.accent ? "#C9A84C" : "#252525"}`,
+              background: band.accent ? "rgba(201,168,76,0.15)" : "#202020",
+              border: `1px solid ${band.accent ? "#C9A84C" : "#333333"}`,
             }}
           >
             <span
               style={{
-                color: band.accent ? "#C9A84C" : "#4a4a4a",
+                color: band.accent ? "#C9A84C" : "#7a7a7a",
                 fontSize: "0.55rem",
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
@@ -230,7 +230,7 @@ function FrequencyChart() {
       {/* X-axis */}
       <div
         className="relative mt-0"
-        style={{ borderTop: "1px solid #222222", height: "36px" }}
+        style={{ borderTop: "1px solid #333333", height: "36px" }}
       >
         {TICKS.map((tick) => (
           <div
@@ -238,10 +238,10 @@ function FrequencyChart() {
             className="absolute top-0 flex flex-col items-center"
             style={{ left: tick.left, transform: "translateX(-50%)" }}
           >
-            <div style={{ width: "1px", height: "5px", background: "#333333" }} />
+            <div style={{ width: "1px", height: "5px", background: "#555555" }} />
             <span
               style={{
-                color: "#3a3a3a",
+                color: "#7a7a7a",
                 fontSize: "0.58rem",
                 fontFamily: "sans-serif",
                 marginTop: "3px",
@@ -256,7 +256,7 @@ function FrequencyChart() {
 
       <p
         className="text-center font-sans uppercase"
-        style={{ color: "#2e2e2e", fontSize: "0.52rem", letterSpacing: "0.2em", marginTop: "0.2rem" }}
+        style={{ color: "#5a5a5a", fontSize: "0.52rem", letterSpacing: "0.2em", marginTop: "0.2rem" }}
       >
         Frequency (Hz) — Logarithmic Scale
       </p>
@@ -264,7 +264,7 @@ function FrequencyChart() {
       {/* Band descriptions */}
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-7 pt-6"
-        style={{ borderTop: "1px solid rgba(42,42,42,0.5)" }}
+        style={{ borderTop: "1px solid rgba(60,60,60,0.7)" }}
       >
         {BANDS.map((band) => (
           <div key={band.label}>
@@ -275,14 +275,14 @@ function FrequencyChart() {
                   height: "7px",
                   borderRadius: "50%",
                   background: band.accent ? "#C9A84C" : "transparent",
-                  border: band.accent ? "none" : "1px solid #3a3a3a",
+                  border: band.accent ? "none" : "1px solid #5a5a5a",
                   flexShrink: 0,
                 }}
               />
               <span
                 className="font-sans uppercase"
                 style={{
-                  color: band.accent ? "#C9A84C" : "#4a4a4a",
+                  color: band.accent ? "#C9A84C" : "#7a7a7a",
                   fontSize: "0.58rem",
                   letterSpacing: "0.12em",
                 }}
@@ -293,7 +293,7 @@ function FrequencyChart() {
             <p
               className="font-sans"
               style={{
-                color: band.accent ? "rgba(201,168,76,0.55)" : "#363636",
+                color: band.accent ? "rgba(201,168,76,0.8)" : "#6a6a6a",
                 fontSize: "0.72rem",
                 lineHeight: "1.65",
                 paddingLeft: "1rem",
@@ -309,9 +309,9 @@ function FrequencyChart() {
       <p
         className="font-sans italic mt-6 pt-5"
         style={{
-          color: "rgba(201,168,76,0.4)",
+          color: "rgba(201,168,76,0.75)",
           fontSize: "0.7rem",
-          borderTop: "1px solid rgba(42,42,42,0.4)",
+          borderTop: "1px solid rgba(60,60,60,0.6)",
         }}
       >
         The room pressurization zone — where cinema lives
@@ -338,7 +338,7 @@ function ComparisonTable() {
   return (
     <div
       className="my-10 overflow-x-auto"
-      style={{ border: "1px solid rgba(42,42,42,0.8)" }}
+      style={{ border: "1px solid rgba(60,60,60,0.9)" }}
     >
       <p
         className="font-serif text-pearl font-light px-6 pt-6 pb-4"
@@ -353,9 +353,9 @@ function ComparisonTable() {
               style={{
                 textAlign: "left",
                 padding: "0.75rem 1.25rem",
-                borderTop: "1px solid #252525",
-                borderBottom: "1px solid #252525",
-                color: "#555555",
+                borderTop: "1px solid #333333",
+                borderBottom: "1px solid #333333",
+                color: "#7a7a7a",
                 fontSize: "0.62rem",
                 letterSpacing: "0.18em",
                 textTransform: "uppercase",
@@ -370,8 +370,8 @@ function ComparisonTable() {
               style={{
                 textAlign: "left",
                 padding: "0.75rem 1.25rem",
-                borderTop: "1px solid #252525",
-                borderBottom: "1px solid #252525",
+                borderTop: "1px solid #333333",
+                borderBottom: "1px solid #333333",
                 color: "#C9A84C",
                 fontSize: "0.62rem",
                 letterSpacing: "0.18em",
@@ -391,14 +391,14 @@ function ComparisonTable() {
               key={i}
               style={{
                 borderBottom:
-                  i < TABLE_ROWS.length - 1 ? "1px solid rgba(42,42,42,0.45)" : "none",
+                  i < TABLE_ROWS.length - 1 ? "1px solid rgba(60,60,60,0.5)" : "none",
                 background: i % 2 === 0 ? "#0d0d0d" : "transparent",
               }}
             >
               <td
                 style={{
                   padding: "0.875rem 1.25rem",
-                  color: "#4a4a4a",
+                  color: "#7a7a7a",
                   fontSize: "0.875rem",
                   lineHeight: "1.65",
                   fontFamily: "sans-serif",
@@ -410,7 +410,7 @@ function ComparisonTable() {
               <td
                 style={{
                   padding: "0.875rem 1.25rem",
-                  color: "#8a8a8a",
+                  color: "#9a9a9a",
                   fontSize: "0.875rem",
                   lineHeight: "1.65",
                   fontFamily: "sans-serif",
@@ -827,9 +827,9 @@ export default function ArticlePage() {
             {/* Author Bio */}
             <div
               className="mt-14 pt-8 font-sans"
-              style={{ borderTop: "1px solid rgba(42,42,42,0.6)" }}
+              style={{ borderTop: "1px solid rgba(60,60,60,0.8)" }}
             >
-              <div className="flex items-center gap-4 mb-3">
+              <div className="flex items-center gap-4 mb-4">
                 <div style={{ width: "28px", height: "1px", background: "#C9A84C" }} />
                 <span
                   className="text-gold uppercase tracking-widest"
@@ -838,7 +838,7 @@ export default function ArticlePage() {
                   About the Author
                 </span>
               </div>
-              <p style={{ color: "#4a4a4a", fontSize: "0.875rem", lineHeight: "1.8" }}>
+              <p style={{ color: "#8a8a8a", fontSize: "0.9375rem", lineHeight: "1.8" }}>
                 Craig Abplanalp is a system performance specialist with over four decades of
                 experience designing reference-level audio and home theater environments. Based in
                 the Pacific Northwest, he works with clients who demand the highest level of
