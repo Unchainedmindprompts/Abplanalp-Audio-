@@ -35,7 +35,15 @@ interface ArticleCard {
   excerpt: string;
 }
 
-const articles: ArticleCard[] = [];
+const articles: ArticleCard[] = [
+  {
+    slug: "why-your-home-theater-doesnt-feel-like-a-movie-theater",
+    title: "Why Your Home Theater Doesn't Feel Like a Movie Theater — And How to Fix It",
+    date: "March 11, 2026",
+    excerpt:
+      "The gap between a great commercial cinema and your home theater has a name: room pressurization. Here's what infrasonic bass does, why most systems can't reproduce it, and what it takes to close that gap.",
+  },
+];
 
 export default function ArticlesPage() {
   return (
