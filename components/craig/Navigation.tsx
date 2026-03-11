@@ -56,8 +56,13 @@ export default function Navigation() {
                 Craig Abplanalp
               </span>
               <span
-                className="text-mist tracking-widest uppercase mt-0.5"
-                style={{ fontSize: "0.55rem", letterSpacing: "0.22em" }}
+                className="tracking-widest uppercase mt-0.5"
+                style={{
+                  fontSize: "0.55rem",
+                  letterSpacing: "0.22em",
+                  color: "#e8e0d0",
+                  textShadow: "0 1px 5px rgba(0,0,0,0.75)",
+                }}
               >
                 Reference Audio Specialist
               </span>
