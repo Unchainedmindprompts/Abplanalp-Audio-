@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { CSSProperties } from "react";
 import Link from "next/link";
 import AnimateIn from "@/components/craig/AnimateIn";
 
@@ -428,19 +429,19 @@ function ComparisonTable() {
 
 // ─── Shared text styles ───────────────────────────────────────────────────────
 
-const bodyText: React.CSSProperties = {
+const bodyText: CSSProperties = {
   color: "rgba(154,154,154,0.9)",
   fontSize: "1rem",
   lineHeight: "1.85",
   fontFamily: "sans-serif",
 };
 
-const h2Style: React.CSSProperties = {
+const h2Style: CSSProperties = {
   fontSize: "clamp(1.375rem, 2.5vw, 1.875rem)",
   letterSpacing: "-0.01em",
 };
 
-const h3Style: React.CSSProperties = {
+const h3Style: CSSProperties = {
   fontSize: "clamp(1.125rem, 2vw, 1.375rem)",
   letterSpacing: "-0.005em",
 };
@@ -493,25 +494,21 @@ export default function ArticlePage() {
           >
             <Link
               href="/"
-              className="transition-colors duration-200"
+              className="transition-colors duration-200 hover:text-gold"
               style={{ color: "#4a4a4a" }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#C9A84C")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#4a4a4a")}
             >
               Home
             </Link>
             <span style={{ color: "#2a2a2a" }}>/</span>
             <Link
               href="/articles"
-              className="transition-colors duration-200"
+              className="transition-colors duration-200 hover:text-gold"
               style={{ color: "#4a4a4a" }}
-              onMouseEnter={(e) => (e.currentTarget.style.color = "#C9A84C")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "#4a4a4a")}
             >
               Articles
             </Link>
             <span style={{ color: "#2a2a2a" }}>/</span>
-            <span style={{ color: "#2e2e2e" }}>Why Your Home Theater…</span>
+            <span style={{ color: "#2e2e2e" }}>Why Your Home Theater&hellip;</span>
           </nav>
 
           <AnimateIn direction="up">
