@@ -16,6 +16,12 @@ export const metadata: Metadata = {
       "Philosophy-driven articles on high-performance audio system design, immersive audio, and reference-level listening environments.",
     url: "https://www.craigabplanalp.com/articles",
     type: "website",
+    images: [
+      {
+        url: "/images/craig-theater-room.webp",
+        alt: "Craig Abplanalp reference theater room — high-performance home cinema design",
+      },
+    ],
   },
 };
 
@@ -52,6 +58,8 @@ export default function ArticlesPage() {
         eyebrow="Perspectives"
         title="The Thinking Behind the Work."
         subtitle="Articles on high-performance audio design, room acoustics, and what it truly takes to build a reference-level listening environment."
+        image="/images/craig-theater-room.webp"
+        imageAlt="Craig Abplanalp reference theater room — high-performance home cinema design"
       />
 
       {/* ARTICLE LISTING */}

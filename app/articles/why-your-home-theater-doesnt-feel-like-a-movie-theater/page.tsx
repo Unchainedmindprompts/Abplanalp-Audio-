@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import AnimateIn from "@/components/craig/AnimateIn";
 
 const SITE_URL = "https://www.craigabplanalp.com";
@@ -21,6 +22,12 @@ export const metadata: Metadata = {
     description: "Something is missing in most home theaters. Here's what it is and how to fix it.",
     url: ARTICLE_URL,
     type: "article",
+    images: [
+      {
+        url: "/images/craig-infrasonic-subwoofer.webp",
+        alt: "Craig Abplanalp's custom infrasonic subwoofer system for reference home theater room pressurization",
+      },
+    ],
   },
 };
 
@@ -39,6 +46,12 @@ const articleSchema = {
     jobTitle: "System Performance Specialist",
     description:
       "Over four decades of experience designing reference-level audio and home theater environments in the Pacific Northwest.",
+  },
+  image: {
+    "@type": "ImageObject",
+    url: `${SITE_URL}/images/craig-infrasonic-subwoofer.webp`,
+    description:
+      "Craig Abplanalp's custom infrasonic subwoofer system for reference home theater room pressurization",
   },
   datePublished: PUB_DATE,
   dateModified: PUB_DATE,
@@ -478,6 +491,7 @@ export default function ArticlePage() {
 
       {/* ── Article Header ── */}
       <section
+        className="relative overflow-hidden"
         style={{
           background: "#0a0a0a",
           paddingTop: "7rem",
@@ -485,7 +499,16 @@ export default function ArticlePage() {
           borderBottom: "1px solid rgba(70,70,70,0.7)",
         }}
       >
-        <div className="craig-container">
+        <Image
+          src="/images/craig-infrasonic-subwoofer.webp"
+          alt="Craig Abplanalp's custom infrasonic subwoofer system for reference home theater room pressurization"
+          fill
+          priority
+          className="object-cover object-center"
+          quality={85}
+        />
+        <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.72)" }} />
+        <div className="craig-container relative z-10">
           {/* Breadcrumb */}
           <nav
             className="flex items-center gap-2 mb-10 font-sans"

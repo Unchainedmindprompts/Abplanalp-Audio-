@@ -8,9 +8,10 @@ interface PageHeroProps {
   subtitle?: string;
   eyebrow?: string;
   image?: string;
+  imageAlt?: string;
 }
 
-export default function PageHero({ title, subtitle, eyebrow, image }: PageHeroProps) {
+export default function PageHero({ title, subtitle, eyebrow, image, imageAlt }: PageHeroProps) {
   return (
     <section className="relative bg-void pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden">
       {/* Background image (optional) */}
@@ -18,7 +19,7 @@ export default function PageHero({ title, subtitle, eyebrow, image }: PageHeroPr
         <>
           <Image
             src={image}
-            alt=""
+            alt={imageAlt ?? ""}
             fill
             priority
             className="object-cover object-center"
