@@ -344,7 +344,7 @@ export default function ArticlePage() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to right, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.38) 100%)",
+              "linear-gradient(to right, rgba(0,0,0,0.68) 0%, rgba(0,0,0,0.38) 50%, rgba(0,0,0,0.22) 100%)",
           }}
         />
         <div className="craig-container relative z-10">
