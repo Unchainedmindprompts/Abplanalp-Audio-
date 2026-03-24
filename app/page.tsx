@@ -285,9 +285,8 @@ export default function Home() {
                 className="pull-quote text-pearl mb-10"
                 style={{ fontSize: 'clamp(1.125rem, 2.5vw, 1.5rem)', lineHeight: '1.7' }}
               >
-                &ldquo;In the late 1990s, Craig was driving Wilson Audio Grand Slams with dedicated
-                Mark Levinson No.&nbsp;33 Monoblocks &mdash; one amplifier per speaker &mdash;
-                in a home theater at a time when most people had never heard the term.&rdquo;
+                &ldquo;A purpose-designed home environment doesn&rsquo;t have to approximate a
+                world-class cinema. Done correctly, it surpasses one.&rdquo;
               </blockquote>
             </AnimateIn>
             <AnimateIn delay={0.2}>
