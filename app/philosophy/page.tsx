@@ -239,92 +239,60 @@ export default function PhilosophyPage() {
             <div className="space-y-8 font-sans text-pearl/80 leading-relaxed" style={{ fontSize: "1.0625rem", lineHeight: "1.85" }}>
               <AnimateIn delay={0.05}>
                 <p>
-                  In the late 1990s, Craig Abplanalp set out to answer a question the industry
-                  hadn&rsquo;t yet asked.
+                  There is a fundamental difference between audio and video equipment built for
+                  commercial environments and equipment built for the uncompromising home.
                 </p>
               </AnimateIn>
 
               <AnimateIn delay={0.1}>
                 <p>
-                  What would it look like to build a home environment where reference music
-                  reproduction and reference cinema experience weren&rsquo;t competing
-                  priorities &mdash; but a single unified pursuit?
+                  Commercial installations &mdash; cinemas, concert venues, sports facilities
+                  &mdash; are engineered with constraints that have nothing to do with
+                  performance. Return on investment. Maintenance schedules. Coverage patterns
+                  designed for thousands of seats at once. The equipment has to be reliable,
+                  serviceable, and cost-effective across thousands of installations. That math
+                  shapes every decision.
                 </p>
               </AnimateIn>
 
               <AnimateIn delay={0.15}>
-                <p style={{ color: "#F5F5F5" }}>Nobody was building that. Craig was.</p>
+                <p style={{ color: "#F5F5F5" }}>
+                  The high-performance home market operates from an entirely different premise.
+                </p>
               </AnimateIn>
 
               <AnimateIn delay={0.2}>
-                <div
-                  className="my-12 p-8 md:p-10 border-l-2"
-                  style={{ borderColor: "#C9A84C", background: "rgba(201,168,76,0.04)" }}
-                >
-                  <p
-                    className="font-serif italic text-pearl"
-                    style={{ fontSize: "clamp(1.125rem, 2.5vw, 1.5rem)", lineHeight: "1.65" }}
-                  >
-                    The system he conceived used Wilson Audio Grand Slams as main front speakers
-                    &mdash; among the most respected loudspeakers ever made &mdash; each driven
-                    by its own dedicated Mark Levinson No.&nbsp;33 Monoblock. One amplifier.
-                    One speaker. Zero shared power.
-                  </p>
-                </div>
+                <p>
+                  What if there were no cost constraints? No return on investment requirement.
+                  No need to serve the back row of a 400-seat auditorium. No compromises driven
+                  by what needs to work in ten thousand rooms at once.
+                </p>
               </AnimateIn>
 
               <AnimateIn delay={0.25}>
                 <p>
-                  Wilson Audio WATT/Puppies handled center and surround channels, driven by
-                  multi-channel Mark Levinson amplification. Dual stacked Sony G90 CRT
-                  projectors with Faroudja Line Quadrupler processing completed the picture.
+                  Companies like Ascendo start from that question. What is physically possible
+                  when engineering is the only constraint? What happens when a loudspeaker is
+                  designed to perform &mdash; not to hit a price point, not to fit a product
+                  line, not to satisfy an accountant?
                 </p>
               </AnimateIn>
 
               <AnimateIn delay={0.3}>
                 <p>
-                  The total investment ran well into six figures &mdash; in 1990s dollars.
+                  The answer, when executed correctly, is something most people have never
+                  experienced: a home environment that doesn&rsquo;t approximate a world-class
+                  cinema. It surpasses one.
                 </p>
               </AnimateIn>
 
               <AnimateIn delay={0.35}>
                 <p>
-                  This wasn&rsquo;t extravagance. It was a proof of concept. Craig wanted to
-                  demonstrate that the artificial boundary between audiophile music reproduction
-                  and cinematic immersion was just that &mdash; artificial. With the right
-                  vision, the right tools, and an absolute refusal to compromise, a single
-                  room could do both at the highest level in the world.
-                </p>
-              </AnimateIn>
-
-              <AnimateIn delay={0.4}>
-                <p style={{ color: "#F5F5F5", fontWeight: 500 }}>It could.</p>
-              </AnimateIn>
-
-              <AnimateIn delay={0.45}>
-                <p>
-                  That proof of concept became a philosophy. That philosophy became a career.
-                  And that career &mdash; now spanning more than four decades &mdash; has never
-                  once wavered from the original premise.
+                  Craig Abplanalp has spent more than four decades understanding how to make
+                  that possible.
                 </p>
               </AnimateIn>
             </div>
-
-            {/* Pull quote break */}
-            <AnimateIn delay={0.5}>
-              <div className="my-16 md:my-24 text-center">
-                <div className="gold-divider mb-8" />
-                <blockquote
-                  className="font-serif italic text-pearl"
-                  style={{ fontSize: "clamp(1.5rem, 4vw, 2.5rem)", lineHeight: "1.4", letterSpacing: "-0.01em", fontWeight: 300 }}
-                >
-                  &ldquo;The tools have evolved.
-                  <br />
-                  The standard hasn&rsquo;t.&rdquo;
-                </blockquote>
-                <div className="gold-divider mt-8" />
-              </div>
-            </AnimateIn>
           </div>
         </div>
       </section>
@@ -340,78 +308,39 @@ export default function PhilosophyPage() {
                   Where It Leads
                 </span>
               </div>
-              <h2
-                className="font-serif text-pearl font-light mb-8"
-                style={{ fontSize: "clamp(1.875rem, 4vw, 2.75rem)", letterSpacing: "-0.01em" }}
-              >
-                The Most Complete Expression Yet
-              </h2>
             </AnimateIn>
 
             <div className="space-y-7 font-sans text-pearl/80 leading-relaxed" style={{ fontSize: "1.0625rem", lineHeight: "1.85" }}>
               <AnimateIn delay={0.1}>
                 <p>
-                  The path to Ascendo didn&rsquo;t begin recently. It began more than two decades ago.
+                  Commercial theaters get you close. They are engineered for scale, for
+                  reliability, for the economics of running a public venue. But scale and
+                  economics are compromises. The low-frequency extension that pressurizes a
+                  room. The dynamic range that never clips under peak load. The spatial
+                  precision that places sound exactly where the mix intended &mdash; these are
+                  the things that budget and installation constraints quietly remove from
+                  commercial systems.
                 </p>
               </AnimateIn>
               <AnimateIn delay={0.15}>
-                <p>
-                  Craig has known Todd Sutherland &mdash; U.S. importer for Ascendo Immersive
-                  Audio &mdash; for over twenty years. During the years Todd represented Madrigal
-                  Audio Laboratories, home to Mark Levinson, Proceed, and Revel, Craig was at
-                  Definitive Audio serving as his dealer partner in the Pacific Northwest. Later,
-                  as Todd moved to Wisdom Audio and Kaleidescape, the relationship deepened
-                  &mdash; built on a shared philosophy about what true performance means and how
-                  it should be delivered to clients.
+                <p style={{ color: "#F5F5F5" }}>
+                  In a purpose-designed home environment, those compromises disappear.
                 </p>
               </AnimateIn>
               <AnimateIn delay={0.2}>
                 <p>
-                  The same uncompromising pursuit that defined Mark Levinson&rsquo;s electronics
-                  and Revel&rsquo;s loudspeakers &mdash; and continued through Wisdom Audio and
-                  Kaleidescape &mdash; now finds its immersive expression in Ascendo. This
-                  isn&rsquo;t a departure. It&rsquo;s a continuation. A progression from
-                  two-channel and traditional theater excellence to fully realized, large-scale
-                  immersive environments.
+                  Craig has worked alongside Todd Sutherland &mdash; U.S. importer for Ascendo
+                  Immersive Audio &mdash; for over two decades. What Ascendo represents is the
+                  clearest expression yet of what no-compromise engineering produces: dynamics
+                  that are unrestricted, bass that pressurizes the room, infrasonic energy that
+                  registers physically before it registers consciously.
                 </p>
               </AnimateIn>
               <AnimateIn delay={0.25}>
                 <p>
-                  Todd and his team have spent years not simply showing products &mdash; but
-                  demonstrating what&rsquo;s possible. Multiple Best of Show honors at CEDIA,
-                  ISE, and other major industry events reflect both execution and vision. Craig
-                  has watched that work firsthand.
-                </p>
-              </AnimateIn>
-              <AnimateIn delay={0.3}>
-                <p>
-                  What Ascendo makes possible is something most people &mdash; even within the
-                  industry &mdash; have never experienced. Dynamics that are unrestricted. Bass
-                  that doesn&rsquo;t just play low but pressurizes the room. Infrasonic energy
-                  that becomes something you feel in your chest before you consciously register
-                  it. When a room energizes below 20Hz and remains articulate above it, the
-                  emotional connection changes. It stops being good sound. It becomes physical,
-                  cinematic immersion.
-                </p>
-              </AnimateIn>
-              <AnimateIn delay={0.35}>
-                <p>
-                  But that level of performance only reveals itself when it&rsquo;s thoughtfully
-                  designed, precisely integrated, and aligned with the right client and
-                  environment.
-                </p>
-              </AnimateIn>
-              <AnimateIn delay={0.4}>
-                <p>
-                  That&rsquo;s what Craig brings. That&rsquo;s what this is about.
-                </p>
-              </AnimateIn>
-              <AnimateIn delay={0.45}>
-                <p
-                  className="font-serif italic text-pearl"
-                  style={{ fontSize: "clamp(1.2rem, 2.5vw, 1.625rem)", lineHeight: "1.55" }}
-                >
-                  This is what forty-five years of pursuit looks like when it finds its instrument.
+                  When that&rsquo;s achieved &mdash; thoughtfully designed, precisely
+                  integrated, aligned with the right space &mdash; it stops being impressive
+                  sound. It becomes immersion that commercial exhibition simply cannot deliver.
                 </p>
               </AnimateIn>
             </div>
