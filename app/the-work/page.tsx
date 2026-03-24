@@ -156,6 +156,17 @@ const projects = [
       "For the client who understood that reference-level audio doesn't require a stadium — it requires precision. A dedicated two-seat listening room with acoustic treatment, Kaleidescape media storage, and calibration that achieves what few systems in the world can: absolute transparency.",
     specs: ["Kaleidescape Cinema System", "Acoustic Treatment Design", "Studio-Reference Calibration", "Wisdom Audio Speakers"],
   },
+  {
+    variant: 2 as const,
+    slug: "rubin-theater",
+    image: "/images/haydn-screen-front-view.webp",
+    location: "Pacific Northwest Residence",
+    tag: "Private Cinema",
+    headline: "The Rubin Theater",
+    description:
+      "A purpose-built private cinema designed to the same uncompromising standard as the Haydn Theater. Commercial-grade projection, reference-level audio, and acoustic construction refined from decades of experience — every decision made in service of the experience, not the specification sheet.",
+    specs: ["Commercial Cinema Projection", "Reference Audio System", "Acoustic Room Design", "Custom Integration"],
+  },
 ];
 
 export default function WorkPage() {
