@@ -87,7 +87,7 @@ export default function HaydnTheaterPage() {
         <div className="craig-container py-5">
           <Link
             href="/the-work"
-            className="inline-flex items-center gap-2 text-mist/50 hover:text-gold transition-colors duration-300 font-sans uppercase tracking-widest"
+            className="inline-flex items-center gap-2 text-mist hover:text-gold transition-colors duration-300 font-sans uppercase tracking-widest"
             style={{ fontSize: "0.65rem", letterSpacing: "0.2em" }}
           >
             <ArrowLeft />
@@ -113,10 +113,10 @@ export default function HaydnTheaterPage() {
               >
                 The Haydn Theater was conceived with an uncompromising vision: to create a private cinema that doesn&rsquo;t just match the world&rsquo;s best commercial theaters — but exceeds them.
               </p>
-              <p className="text-mist font-sans leading-relaxed mb-6" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
+              <p className="text-pearl/80 font-sans leading-relaxed mb-6" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
                 The client came into the process having experienced many of the finest theaters globally. That perspective shaped every decision. This wasn&rsquo;t about building a great home theater. It was about redefining what a private cinema could be.
               </p>
-              <p className="text-mist font-sans leading-relaxed" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
+              <p className="text-pearl/80 font-sans leading-relaxed" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
                 From the earliest design phases, every element was treated as critical. Acoustic performance, image fidelity, system scale, and integration all had to work in absolute harmony. There were no shortcuts, no assumptions, and no detail too small to matter.
               </p>
             </AnimateIn>
@@ -131,7 +131,7 @@ export default function HaydnTheaterPage() {
             {["Dual Christie 4K Projectors", "Trinnov Altitude32", "Wisdom Audio LS4", "5× VUE HS-28 Subwoofers", "Classé Audio Amplification", "Stewart Filmscreen", "Dolby DFC-100", "19-Channel Immersive"].map((tag) => (
               <span
                 key={tag}
-                className="text-mist/60 border border-slate font-sans px-3 py-1"
+                className="text-pearl/70 border border-slate font-sans px-3 py-1"
                 style={{ fontSize: "0.7rem", letterSpacing: "0.08em" }}
               >
                 {tag}
@@ -158,10 +158,10 @@ export default function HaydnTheaterPage() {
                       Image & Projection
                     </span>
                   </div>
-                  <p className="text-mist font-sans leading-relaxed mb-5" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
+                  <p className="text-pearl/80 font-sans leading-relaxed mb-5" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
                     At the heart of the experience is a true commercial cinema projection system. The image is massive, immersive, and effortless — equally capable of delivering pristine 2D content and fully realized 3D presentations with a level of brightness and clarity rarely achieved in residential environments.
                   </p>
-                  <p className="text-mist font-sans leading-relaxed" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
+                  <p className="text-pearl/80 font-sans leading-relaxed" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
                     The curved, acoustically transparent Stewart Filmscreen allows sound and image to originate from the same space, preserving realism at a scale that immediately pulls you into the film. A dual Christie 4K projector architecture optimizes each format independently — one projector dedicated to 2D, both deployed for 3D — ensuring neither discipline compromises the other.
                   </p>
                 </div>
@@ -176,10 +176,10 @@ export default function HaydnTheaterPage() {
                       Audio System
                     </span>
                   </div>
-                  <p className="text-mist font-sans leading-relaxed mb-5" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
+                  <p className="text-pearl/80 font-sans leading-relaxed mb-5" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
                     The audio system was designed to do more than surround the audience — it was built to disappear. Dialogue is anchored with precision, movement across the room is seamless, and dynamics are delivered without strain, even at reference levels. The system maintains clarity and composure no matter how complex or demanding the content becomes.
                   </p>
-                  <p className="text-mist font-sans leading-relaxed" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
+                  <p className="text-pearl/80 font-sans leading-relaxed" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
                     Wisdom Audio LS4 speakers line the screen in a five-channel array, with the Trinnov Altitude32 providing the surgical processing backbone. Classé Audio amplification — CT-M600 monoblocks and CT-5300 multi-channel — delivers the current reserve needed to maintain absolute composure at any level.
                   </p>
                 </div>
@@ -194,10 +194,10 @@ export default function HaydnTheaterPage() {
                       Low Frequency
                     </span>
                   </div>
-                  <p className="text-mist font-sans leading-relaxed mb-5" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
+                  <p className="text-pearl/80 font-sans leading-relaxed mb-5" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
                     Low frequency performance was approached with equal intention. Five VUE Audiotechnik HS-28 subwoofers were deployed not simply for impact, but to pressurize the room — creating a physical connection to the content that you feel as much as you hear.
                   </p>
-                  <p className="text-mist font-sans leading-relaxed" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
+                  <p className="text-pearl/80 font-sans leading-relaxed" style={{ fontSize: "1rem", lineHeight: "1.9" }}>
                     It&rsquo;s controlled, effortless, and deeply immersive, extending the experience beyond traditional listening into something that engages the entire body.
                   </p>
                 </div>
@@ -215,7 +215,7 @@ export default function HaydnTheaterPage() {
                   >
                     What ultimately defines the Haydn Theater is not any single component, but how everything comes together. The technology serves the experience, not the other way around. When the system disappears, and the viewer is fully transported — that&rsquo;s when the design succeeds.
                   </p>
-                  <p className="text-gold/70 font-sans mt-5 uppercase tracking-widest" style={{ fontSize: "0.65rem", letterSpacing: "0.2em" }}>
+                  <p className="text-gold font-sans mt-5 uppercase tracking-widest" style={{ fontSize: "0.65rem", letterSpacing: "0.2em" }}>
                     Craig Abplanalp
                   </p>
                 </div>
@@ -240,7 +240,7 @@ export default function HaydnTheaterPage() {
                         style={{ background: "rgba(201,168,76,0.04)" }}
                       >
                         <span
-                          className="text-gold/80 font-sans uppercase tracking-widest"
+                          className="text-gold font-sans uppercase tracking-widest"
                           style={{ fontSize: "0.6rem", letterSpacing: "0.2em" }}
                         >
                           {section.category}
@@ -250,13 +250,13 @@ export default function HaydnTheaterPage() {
                         {section.items.map((item) => (
                           <div key={item.label} className="flex gap-4 justify-between">
                             <span
-                              className="text-mist/50 font-sans flex-shrink-0"
+                              className="text-mist font-sans flex-shrink-0"
                               style={{ fontSize: "0.75rem", lineHeight: "1.6" }}
                             >
                               {item.label}
                             </span>
                             <span
-                              className="text-pearl/80 font-sans text-right"
+                              className="text-pearl font-sans text-right"
                               style={{ fontSize: "0.8rem", lineHeight: "1.6" }}
                             >
                               {item.value}
@@ -290,7 +290,7 @@ export default function HaydnTheaterPage() {
             >
               Wiring & Signal Flow
             </h2>
-            <p className="text-mist font-sans mb-10 max-w-2xl" style={{ fontSize: "0.9375rem", lineHeight: "1.8" }}>
+            <p className="text-pearl/80 font-sans mb-10 max-w-2xl" style={{ fontSize: "0.9375rem", lineHeight: "1.8" }}>
               Every signal path, every equipment rack, every room connection — documented at the level of precision the system demands.
             </p>
           </AnimateIn>
@@ -306,13 +306,13 @@ export default function HaydnTheaterPage() {
                 style={{ background: "rgba(201,168,76,0.03)" }}
               >
                 <span
-                  className="text-gold/60 font-sans uppercase tracking-widest"
+                  className="text-gold font-sans uppercase tracking-widest"
                   style={{ fontSize: "0.6rem", letterSpacing: "0.2em" }}
                 >
                   Haydn Theater · System Wiring Diagram · 2016
                 </span>
                 <span
-                  className="text-mist/30 font-sans"
+                  className="text-mist font-sans"
                   style={{ fontSize: "0.6rem" }}
                 >
                   Craig Abplanalp · Definitive Audio
@@ -333,7 +333,7 @@ export default function HaydnTheaterPage() {
 
               {/* Bottom caption */}
               <div className="px-6 py-4 border-t border-slate/30">
-                <p className="text-mist/40 font-sans" style={{ fontSize: "0.7rem", lineHeight: "1.6" }}>
+                <p className="text-mist font-sans" style={{ fontSize: "0.7rem", lineHeight: "1.6" }}>
                   Complete signal routing for the Haydn Theater installation. Dual Christie 4K projector architecture, Trinnov Altitude32 processing, Wisdom Audio speaker array, five VUE HS-28 subwoofers, and Classé Audio amplification — all mapped to scale.
                 </p>
               </div>
@@ -370,7 +370,7 @@ export default function HaydnTheaterPage() {
                 <br />
                 <span className="italic" style={{ color: "rgba(201,168,76,0.9)" }}>A benchmark for what is possible.</span>
               </h3>
-              <p className="text-mist font-sans mb-12 leading-relaxed" style={{ fontSize: "1rem", lineHeight: "1.8" }}>
+              <p className="text-pearl/80 font-sans mb-12 leading-relaxed" style={{ fontSize: "1rem", lineHeight: "1.8" }}>
                 When every decision is guided by performance, precision, and a clear vision of the outcome — the result speaks for itself.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -379,7 +379,7 @@ export default function HaydnTheaterPage() {
                 </Link>
                 <Link
                   href="/the-work"
-                  className="inline-flex items-center gap-2 border border-slate text-mist/70 hover:text-gold hover:border-gold/40 transition-all duration-300 font-sans uppercase tracking-widest px-8 py-4"
+                  className="inline-flex items-center gap-2 border border-slate text-mist hover:text-gold hover:border-gold/40 transition-all duration-300 font-sans uppercase tracking-widest px-8 py-4"
                   style={{ fontSize: "0.75rem", letterSpacing: "0.15em" }}
                 >
                   All Projects

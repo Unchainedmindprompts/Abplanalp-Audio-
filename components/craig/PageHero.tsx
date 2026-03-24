@@ -25,7 +25,7 @@ export default function PageHero({ title, subtitle, eyebrow, image, imageAlt }: 
             className="object-cover object-center"
             quality={85}
           />
-          <div className="absolute inset-0 bg-black/30" />
+          <div className="absolute inset-0 bg-black/10" />
         </>
       )}
 
@@ -79,7 +79,7 @@ export default function PageHero({ title, subtitle, eyebrow, image, imageAlt }: 
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35, ease: "easeOut" }}
-            className="text-pearl/90 font-sans mt-6 max-w-xl mx-auto leading-relaxed"
+            className="text-pearl font-sans mt-6 max-w-xl mx-auto leading-relaxed"
             style={{ fontSize: "1.1875rem" }}
           >
             {subtitle}
