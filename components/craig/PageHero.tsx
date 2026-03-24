@@ -25,7 +25,15 @@ export default function PageHero({ title, subtitle, eyebrow, image, imageAlt }: 
             className="object-cover object-center"
             quality={85}
           />
-          <div className="absolute inset-0 bg-black/10" />
+          {/* Base darkening layer */}
+          <div className="absolute inset-0 bg-black/55" />
+          {/* Extra gradient — darkest behind the text center */}
+          <div
+            className="absolute inset-0"
+            style={{
+              background: "radial-gradient(ellipse 80% 70% at 50% 55%, rgba(0,0,0,0.45) 0%, transparent 100%)",
+            }}
+          />
         </>
       )}
 
@@ -51,7 +59,7 @@ export default function PageHero({ title, subtitle, eyebrow, image, imageAlt }: 
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="text-gold uppercase tracking-widest text-xs font-sans mb-6"
-            style={{ letterSpacing: "0.25em" }}
+            style={{ letterSpacing: "0.25em", textShadow: "0 1px 8px rgba(0,0,0,0.9)" }}
           >
             {eyebrow}
           </motion.p>
@@ -69,7 +77,7 @@ export default function PageHero({ title, subtitle, eyebrow, image, imageAlt }: 
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
           className="font-serif text-pearl font-light leading-tight"
-          style={{ fontSize: "clamp(3rem, 7vw, 6rem)", letterSpacing: "-0.02em" }}
+          style={{ fontSize: "clamp(3rem, 7vw, 6rem)", letterSpacing: "-0.02em", textShadow: "0 2px 24px rgba(0,0,0,0.8), 0 1px 4px rgba(0,0,0,0.9)" }}
         >
           {title}
         </motion.h1>
@@ -80,7 +88,7 @@ export default function PageHero({ title, subtitle, eyebrow, image, imageAlt }: 
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35, ease: "easeOut" }}
             className="text-pearl font-sans mt-6 max-w-xl mx-auto leading-relaxed"
-            style={{ fontSize: "1.1875rem" }}
+            style={{ fontSize: "1.1875rem", textShadow: "0 1px 12px rgba(0,0,0,0.9)" }}
           >
             {subtitle}
           </motion.p>
