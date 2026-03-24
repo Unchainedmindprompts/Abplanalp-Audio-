@@ -16,6 +16,12 @@ export const metadata: Metadata = {
       "Philosophy-driven articles on high-performance audio system design, immersive audio, and reference-level listening environments.",
     url: "https://www.craigabplanalp.com/articles",
     type: "website",
+    images: [
+      {
+        url: "/images/craig-theater-room.webp",
+        alt: "Craig Abplanalp reference theater room — high-performance home cinema design",
+      },
+    ],
   },
 };
 
@@ -37,6 +43,13 @@ interface ArticleCard {
 
 const articles: ArticleCard[] = [
   {
+    slug: "the-most-overlooked-room-in-every-luxury-home",
+    title: "The Most Overlooked Room in Every Luxury Home",
+    date: "March 11, 2026",
+    excerpt:
+      "Luxury homes invest $150,000 in kitchens and $100,000 in master baths. The room used most every evening gets a soundbar. On the awareness gap that costs high-end homeowners the experience they deserve.",
+  },
+  {
     slug: "why-your-home-theater-doesnt-feel-like-a-movie-theater",
     title: "Why Your Home Theater Doesn't Feel Like a Movie Theater — And How to Fix It",
     date: "March 11, 2026",
@@ -52,6 +65,8 @@ export default function ArticlesPage() {
         eyebrow="Perspectives"
         title="The Thinking Behind the Work."
         subtitle="Articles on high-performance audio design, room acoustics, and what it truly takes to build a reference-level listening environment."
+        image="/images/craig-theater-room.webp"
+        imageAlt="Craig Abplanalp reference theater room — high-performance home cinema design"
       />
 
       {/* ARTICLE LISTING */}

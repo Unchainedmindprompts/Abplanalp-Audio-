@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { CSSProperties } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import AnimateIn from "@/components/craig/AnimateIn";
 
 const SITE_URL = "https://www.craigabplanalp.com";
@@ -21,6 +22,12 @@ export const metadata: Metadata = {
     description: "Something is missing in most home theaters. Here's what it is and how to fix it.",
     url: ARTICLE_URL,
     type: "article",
+    images: [
+      {
+        url: "/images/craig-infrasonic-subwoofer.webp",
+        alt: "Craig Abplanalp's custom infrasonic subwoofer system for reference home theater room pressurization",
+      },
+    ],
   },
 };
 
@@ -39,6 +46,12 @@ const articleSchema = {
     jobTitle: "System Performance Specialist",
     description:
       "Over four decades of experience designing reference-level audio and home theater environments in the Pacific Northwest.",
+  },
+  image: {
+    "@type": "ImageObject",
+    url: `${SITE_URL}/images/craig-infrasonic-subwoofer.webp`,
+    description:
+      "Craig Abplanalp's custom infrasonic subwoofer system for reference home theater room pressurization",
   },
   datePublished: PUB_DATE,
   dateModified: PUB_DATE,
@@ -430,7 +443,7 @@ function ComparisonTable() {
 // ─── Shared text styles ───────────────────────────────────────────────────────
 
 const bodyText: CSSProperties = {
-  color: "rgba(154,154,154,0.9)",
+  color: "rgba(200,200,200,0.92)",
   fontSize: "1rem",
   lineHeight: "1.85",
   fontFamily: "sans-serif",
@@ -478,14 +491,30 @@ export default function ArticlePage() {
 
       {/* ── Article Header ── */}
       <section
+        className="relative overflow-hidden"
         style={{
           background: "#0a0a0a",
           paddingTop: "7rem",
           paddingBottom: "3.5rem",
-          borderBottom: "1px solid rgba(42,42,42,0.6)",
+          borderBottom: "1px solid rgba(70,70,70,0.7)",
         }}
       >
-        <div className="craig-container">
+        <Image
+          src="/images/craig-infrasonic-subwoofer.webp"
+          alt="Craig Abplanalp's custom infrasonic subwoofer system for reference home theater room pressurization"
+          fill
+          priority
+          className="object-cover object-center"
+          quality={85}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(to right, rgba(0,0,0,0.68) 0%, rgba(0,0,0,0.42) 55%, rgba(0,0,0,0.28) 100%)",
+          }}
+        />
+        <div className="craig-container relative z-10">
           {/* Breadcrumb */}
           <nav
             className="flex items-center gap-2 mb-10 font-sans"
@@ -495,20 +524,20 @@ export default function ArticlePage() {
             <Link
               href="/"
               className="transition-colors duration-200 hover:text-gold"
-              style={{ color: "#4a4a4a" }}
+              style={{ color: "#a0a0a0" }}
             >
               Home
             </Link>
-            <span style={{ color: "#2a2a2a" }}>/</span>
+            <span style={{ color: "#777777" }}>/</span>
             <Link
               href="/articles"
               className="transition-colors duration-200 hover:text-gold"
-              style={{ color: "#4a4a4a" }}
+              style={{ color: "#a0a0a0" }}
             >
               Articles
             </Link>
-            <span style={{ color: "#2a2a2a" }}>/</span>
-            <span style={{ color: "#2e2e2e" }}>Why Your Home Theater&hellip;</span>
+            <span style={{ color: "#777777" }}>/</span>
+            <span style={{ color: "#909090" }}>Why Your Home Theater&hellip;</span>
           </nav>
 
           <AnimateIn direction="up">
@@ -538,9 +567,9 @@ export default function ArticlePage() {
 
             {/* Byline */}
             <div className="flex items-center gap-5 font-sans" style={{ fontSize: "0.75rem" }}>
-              <span style={{ color: "#5a5a5a" }}>{PUB_DATE_DISPLAY}</span>
-              <div style={{ width: "1px", height: "14px", background: "#2a2a2a" }} />
-              <span style={{ color: "#5a5a5a" }}>Craig Abplanalp</span>
+              <span style={{ color: "#a0a0a0" }}>{PUB_DATE_DISPLAY}</span>
+              <div style={{ width: "1px", height: "14px", background: "#707070" }} />
+              <span style={{ color: "#a0a0a0" }}>Craig Abplanalp</span>
             </div>
           </AnimateIn>
         </div>
