@@ -114,6 +114,7 @@ function TheaterViz({ variant }: { variant: 1 | 2 | 3 | 4 }) {
 const projects = [
   {
     variant: 1 as const,
+    slug: "ascendo-immersive-audio",
     image: "/images/kaleidescape-theater.png",
     location: "Pacific Northwest Residence",
     tag: "Ascendo Immersive Audio",
@@ -124,6 +125,7 @@ const projects = [
   },
   {
     variant: 2 as const,
+    slug: "music-cinema-unified",
     image: "/images/private-cinema.png",
     location: "Eastside Seattle Estate",
     tag: "Music & Cinema Unified",
@@ -134,6 +136,7 @@ const projects = [
   },
   {
     variant: 3 as const,
+    slug: "cedia-medina-waterfront",
     image: "/images/concert-stadium.png",
     location: "Medina Waterfront Estate",
     tag: "CEDIA Recognized",
@@ -144,6 +147,7 @@ const projects = [
   },
   {
     variant: 4 as const,
+    slug: "intimate-reference-bellevue",
     image: "/images/reference-music-room.png",
     location: "Bellevue Private Residence",
     tag: "Intimate Reference",
@@ -178,69 +182,77 @@ export default function WorkPage() {
           <div className="space-y-8">
             {projects.map((project, i) => (
               <AnimateIn key={project.location} delay={i * 0.1} direction="up">
-                <div className="cinema-card overflow-hidden">
-                  <div className="grid grid-cols-1 lg:grid-cols-2">
-                    {/* Theater visualization / photo */}
-                    <div className="relative aspect-[16/9] lg:aspect-auto lg:min-h-[320px] overflow-hidden">
-                      {'image' in project && project.image ? (
-                        <Image
-                          src={project.image}
-                          alt={project.headline}
-                          fill
-                          className="object-cover object-center"
-                          sizes="(max-width: 1024px) 100vw, 50vw"
-                        />
-                      ) : (
-                        <TheaterViz variant={project.variant} />
-                      )}
-                      {/* Tag overlay */}
-                      <div className="absolute top-5 left-5 z-10">
-                        <span
-                          className="inline-block bg-void/80 backdrop-blur-sm border border-gold/30 text-gold font-sans uppercase tracking-widest px-3 py-1"
-                          style={{ fontSize: "0.6rem", letterSpacing: "0.18em" }}
-                        >
-                          {project.tag}
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-8 md:p-10 flex flex-col justify-between">
-                      <div>
-                        <p
-                          className="text-mist/70 font-sans uppercase tracking-widest mb-3"
-                          style={{ fontSize: "0.65rem", letterSpacing: "0.2em" }}
-                        >
-                          {project.location}
-                        </p>
-                        <h3
-                          className="font-serif text-pearl font-light mb-5"
-                          style={{ fontSize: "clamp(1.375rem, 2.5vw, 1.875rem)", letterSpacing: "-0.01em", lineHeight: "1.3" }}
-                        >
-                          {project.headline}
-                        </h3>
-                        <p className="text-mist font-sans leading-relaxed mb-8" style={{ fontSize: "0.9375rem", lineHeight: "1.8" }}>
-                          {project.description}
-                        </p>
+                <Link href={`/the-work/${project.slug}`} className="block group">
+                  <div className="cinema-card overflow-hidden transition-colors duration-300 group-hover:border-gold/30">
+                    <div className="grid grid-cols-1 lg:grid-cols-2">
+                      {/* Theater visualization / photo */}
+                      <div className="relative aspect-[16/9] lg:aspect-auto lg:min-h-[320px] overflow-hidden">
+                        {'image' in project && project.image ? (
+                          <Image
+                            src={project.image}
+                            alt={project.headline}
+                            fill
+                            className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.02]"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
+                          />
+                        ) : (
+                          <TheaterViz variant={project.variant} />
+                        )}
+                        {/* Tag overlay */}
+                        <div className="absolute top-5 left-5 z-10">
+                          <span
+                            className="inline-block bg-void/80 backdrop-blur-sm border border-gold/30 text-gold font-sans uppercase tracking-widest px-3 py-1"
+                            style={{ fontSize: "0.6rem", letterSpacing: "0.18em" }}
+                          >
+                            {project.tag}
+                          </span>
+                        </div>
                       </div>
 
-                      {/* Specs */}
-                      <div className="border-t border-slate pt-6">
-                        <div className="flex flex-wrap gap-2">
-                          {project.specs.map((spec) => (
-                            <span
-                              key={spec}
-                              className="text-mist/70 border border-slate font-sans px-3 py-1"
-                              style={{ fontSize: "0.7rem", letterSpacing: "0.08em" }}
-                            >
-                              {spec}
+                      {/* Content */}
+                      <div className="p-8 md:p-10 flex flex-col justify-between">
+                        <div>
+                          <p
+                            className="text-mist/70 font-sans uppercase tracking-widest mb-3"
+                            style={{ fontSize: "0.65rem", letterSpacing: "0.2em" }}
+                          >
+                            {project.location}
+                          </p>
+                          <h3
+                            className="font-serif text-pearl font-light mb-5"
+                            style={{ fontSize: "clamp(1.375rem, 2.5vw, 1.875rem)", letterSpacing: "-0.01em", lineHeight: "1.3" }}
+                          >
+                            {project.headline}
+                          </h3>
+                          <p className="text-mist font-sans leading-relaxed mb-8" style={{ fontSize: "0.9375rem", lineHeight: "1.8" }}>
+                            {project.description}
+                          </p>
+                        </div>
+
+                        {/* Specs + read more */}
+                        <div className="border-t border-slate pt-6">
+                          <div className="flex flex-wrap gap-2 mb-6">
+                            {project.specs.map((spec) => (
+                              <span
+                                key={spec}
+                                className="text-mist/70 border border-slate font-sans px-3 py-1"
+                                style={{ fontSize: "0.7rem", letterSpacing: "0.08em" }}
+                              >
+                                {spec}
+                              </span>
+                            ))}
+                          </div>
+                          <div className="flex items-center gap-2 text-gold/60 group-hover:text-gold transition-colors duration-300">
+                            <span className="font-sans uppercase tracking-widest" style={{ fontSize: "0.65rem", letterSpacing: "0.2em" }}>
+                              Read Full Case Study
                             </span>
-                          ))}
+                            <ArrowRight />
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </AnimateIn>
             ))}
           </div>
