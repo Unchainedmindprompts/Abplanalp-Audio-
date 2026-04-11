@@ -228,7 +228,7 @@ export default function Home() {
                 icon: <FilmFrameIcon />,
                 title: 'The Work',
                 body: 'Reference-level music rooms. Private cinemas designed to pull you in and hold you there. Systems that earn editorial coverage in TechRadar and recognition at CEDIA Best of Show — because the results speak for themselves.',
-                href: '/work',
+                href: '/the-work',
                 delay: 0.2,
               },
             ].map(({ icon, title, body, href, delay }) => (
@@ -355,7 +355,7 @@ export default function Home() {
                   <p style={{ color: 'rgba(245,245,245,0.85)' }}>Not marketing. Physics.</p>
                 </div>
                 <div className="mt-10">
-                  <Link href="/work" className="text-link-gold uppercase flex items-center gap-2" style={{ letterSpacing: '0.15em', fontSize: '0.75rem' }}>
+                  <Link href="/the-work" className="text-link-gold uppercase flex items-center gap-2" style={{ letterSpacing: '0.15em', fontSize: '0.75rem' }}>
                     Discover what&rsquo;s possible <ArrowRight />
                   </Link>
                 </div>
